@@ -44,25 +44,18 @@
                 color: #ffa902;
             }
     </style>
-    <link rel="stylesheet" id="woocommerce-layout-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/woocommerce-layout.css" type="text/css" media="all">
-    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
-    <link rel="stylesheet" id="woocommerce-general-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/woocommerce.css" type="text/css" media="all">
-    <link rel="stylesheet" id="jquery-ui-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery-ui-1.8.24.custom.css" type="text/css" media="all">
-    <link rel="stylesheet" id="combined_css-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/combined.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fontawesome-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="custom_css-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/custom-css.php" type="text/css" media="all">
-    <link rel="stylesheet" id="google_font1-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/css" type="text/css" media="all">
-    <link rel="stylesheet" id="responsive-css" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/responsive-css.php" type="text/css" media="all">
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery.themepunch.revolution.min.js"></script>
+    <link href="~/Content/woocommerce-layout.css" rel="stylesheet" />
+    <link href="~/Content/woocommerce-smallscreen.css" rel="stylesheet" />
+    <link href="~/Content/woocommerce.css" rel="stylesheet" />
+    <link href="~/Content/combined.css" rel="stylesheet" /> 
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    
+    <script src="~/Scripts/jquery-1.8.2.js"></script> 
+    <script src="~/Scripts/jquery-migrate.min.js"></script>
+    <script src="~/Scripts/jquery.themepunch.tools.min.js"></script>
+    <script src="~/Scripts/jquery.themepunch.revolution.min.js"></script>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://themes.themegoods2.com/altair/xmlrpc.php?rsd">
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://themes.themegoods2.com/altair/wp-includes/wlwmanifest.xml">
-    <meta name="generator" content="WordPress 4.2.2">
-    <meta name="generator" content="WooCommerce 2.3.13">
-    <link rel="canonical" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/Altair _ Stunning Travel Agency Theme » Just another WordPress site.html">
-    <link rel="shortlink" href="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/Altair _ Stunning Travel Agency Theme » Just another WordPress site.html">
     <script type="text/javascript">
         jQuery(document).ready(function () {
             var ajaxRevslider = function (obj) {
@@ -77,17 +70,13 @@
                 data.id = obj.id;
                 data.aspectratio = obj.aspectratio;
 
-                // SYNC AJAX REQUEST
-                // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
                 return content;
             };
 
-            // CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
             var ajaxRemoveRevslider = function (obj) {
                 return jQuery(obj.selector + " .rev_slider").revkill();
             };
 
-            // EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
             var extendessential = setInterval(function () {
                 if (jQuery.fn.tpessential != undefined) {
                     clearInterval(extendessential);
@@ -105,10 +94,14 @@
             margin: 0 !important;
         }
     </style>
-    <!--<script type="text/javascript" charset="UTF-8" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/common.js"></script>-->
 </head>
 <body class="home page page-id-3093 page-template page-template-page_f page-template-page_f-php hover">
-    <div class="parallax-block" style="width: 1349px; height: 513px; visibility: hidden; transform: translate3d(0px, 591px, 0px); -webkit-transform: translate3d(0px, 591px, 0px);"><img class="parallax-image" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-12.jpg" style="width: 1349px; height: 1012px; transform: translate3d(0px, -177.3px, 0px); -webkit-transform: translate3d(0px, -177.3px, 0px);"></div><div class="parallax-block" style="width: 1349px; height: 600px; visibility: hidden; transform: translate3d(0px, 635px, 0px); -webkit-transform: translate3d(0px, 635px, 0px);"><img class="parallax-image" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-13.jpg" style="width: 1349px; height: 1012px; transform: translate3d(0px, -190.5px, 0px); -webkit-transform: translate3d(0px, -190.5px, 0px);"></div>
+    <div class="parallax-block" style="width: 1349px; height: 513px; visibility: hidden; transform: translate3d(0px, 591px, 0px); -webkit-transform: translate3d(0px, 591px, 0px);">
+
+        <img src="~/Content/images/1600x1200-12.jpg" style="width: 1349px; height: 1012px; transform: translate3d(0px, -177.3px, 0px);-webkit-transform: translate3d(0px, -177.3px, 0px);" />
+    </div><div class="parallax-block" style="width: 1349px; height: 600px; visibility: hidden; transform: translate3d(0px, 635px, 0px); -webkit-transform: translate3d(0px, 635px, 0px);">
+        <img class="parallax-image" src="~/Content/images/1600x1200-13.jpg" style="width: 1349px; height: 1012px; transform: translate3d(0px, -190.5px, 0px); -webkit-transform: translate3d(0px, -190.5px, 0px);" />
+    </div>
     <input type="hidden" id="pp_enable_reflection" name="pp_enable_reflection" value="">
     <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="">
     <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="">
@@ -121,7 +114,6 @@
 
     <input type="hidden" id="pp_footer_style" name="pp_footer_style" value="4">
 
-    <!-- Begin mobile menu -->
     <div class="mobile_menu_wrapper">
         <a id="close_mobile_menu" href="http://themes.themegoods2.com/altair/#"><i class="fa fa-times-circle"></i></a>
         <div class="menu-main-menu-container">
@@ -215,7 +207,6 @@
                                 <li id="menu-item-3171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3171"><a href="http://themes.themegoods2.com/altair/columns/">Columns</a></li>
                                 <li id="menu-item-3170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3170"><a href="http://themes.themegoods2.com/altair/dividers/">Dividers</a></li>
                                 <li id="menu-item-3169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3169"><a href="http://themes.themegoods2.com/altair/gallery/">Gallery</a></li>
-                                <!--<li id="menu-item-3168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3168"><a href="http://themes.themegoods2.com/altair/google-maps/">Google Maps</a></li>-->
                             </ul>
                         </li>
                         <li id="menu-item-3331" class="hidden menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3331">
@@ -240,8 +231,6 @@
             </ul>
         </div>
     </div>
-    <!-- End mobile menu -->
-    <!-- Begin template wrapper -->
     <div id="wrapper">
 
 
@@ -252,18 +241,14 @@
                 <div id="mobile_nav_icon"></div>
 
                 <div id="menu_wrapper">
-
-                    <!-- Begin logo -->
-
                     <a id="custom_logo" class="logo_wrapper hidden" href="http://themes.themegoods2.com/altair">
-                        <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/logo@2x.png" alt="" width="69" height="33">
+                        <img src="~/Content/images/logo@2x.png" />
                     </a>
 
 
                     <a id="custom_logo_transparent" class="logo_wrapper default" href="http://themes.themegoods2.com/altair">
-                        <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/logo@2x_white.png" alt="" width="69" height="33">
+                        <img src="~/Content/images/logo@2x_white.png" />
                     </a>
-                    <!-- End logo -->
 
                     <a href="tel:1800-2345-5678">
                         <div class="header_action">
@@ -271,7 +256,7 @@
                         </div>
                     </a>
 
-                    <form role="search" method="get" name="searchform" id="searchform" action="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/Altair _ Stunning Travel Agency Theme » Just another WordPress site.html">
+                    <form role="search" method="get" name="searchform" id="searchform">
                         <div>
                             <label for="s">To Search, type and hit enter</label>
                             <input type="text" value="" name="s" id="s" autocomplete="off">
@@ -286,7 +271,6 @@
                         <a href="http://themes.themegoods2.com/altair/cart/"><i class="fa fa-shopping-cart"></i></a>
                     </div>
 
-                    <!-- Begin main nav -->
                     <div id="nav_wrapper">
                         <div class="nav_wrapper_inner">
                             <div id="menu_border_wrapper" style="display: block;">
@@ -381,7 +365,6 @@
                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3171"><a href="http://themes.themegoods2.com/altair/columns/"><span>Columns</span></a></li>
                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3170"><a href="http://themes.themegoods2.com/altair/dividers/"><span>Dividers</span></a></li>
                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3169"><a href="http://themes.themegoods2.com/altair/gallery/"><span>Gallery</span></a></li>
-                                                        <!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3168"><a href="http://themes.themegoods2.com/altair/google-maps/"><span>Google Maps</span></a></li>-->
                                                     </ul>
                                                 </li>
                                                 <li class="hidden menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children arrow menu-item-3331">
@@ -408,9 +391,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- End main nav -->
-
                 </div>
             </div>
         </div>
@@ -418,63 +398,44 @@
 
         <div class="page_slider menu_transparent">
             <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" style="padding: 0px; height: 623px; max-height: none; overflow: visible; background-color: rgb(0, 0, 0);">
-                <!-- START REVOLUTION SLIDER 4.6.5 fullscreen mode -->
                 <div id="rev_slider_1_1" class="rev_slider fullscreenbanner revslider-initialised tp-simpleresponsive hovered" style="height: 100%; max-height: none;">
                     <ul class="tp-revslider-mainul" style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
-                        <!-- SLIDE  -->
                         <li data-transition="zoomout" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;">
-                            <!-- MAIN IMAGE -->
                             <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-1.jpg" data-src="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-1.jpg" style="width: 100%; height: 100%; opacity: 1; visibility: hidden; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-1.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
                             <div class="tp-caption pp_subheader sfl stl tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-300" data-speed="600" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 30px; border-width: 0px 0px 2px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 652px; top: 335px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, -50, 0, 0, 1);">
                                 Italy
                             </div>
-                            <!-- LAYER NR. 2 -->
                             <div class="tp-caption pp_header sfr str tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-180" data-speed="600" data-start="1300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 6; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 114px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 80px; left: 505.5px; top: 373px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 50, 0, 0, 1);">
                                 Venezia
                             </div>
-                            <!-- LAYER NR. 3 -->
                             <div class="tp-caption pp_content sfb stb tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-100" data-speed="600" data-start="1600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 7; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 454.5px; top: 489px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 50, 0, 1);">
                                 Arctic temperatures and several meters of snow<br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px;">
                                 are no match for the natural impressions and cultural twist <br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px;">
                                 that will warm your soul while dog sledding in Greenland.<br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px;">
                             </div>
                         </li>
-                        <!-- SLIDE  -->
                         <li data-transition="zoomout" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" class="tp-revslider-slidesli active-revslide current-sr-slide-visible" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;">
-                            <!-- MAIN IMAGE -->
                             <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-2.jpg" data-src="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-2.jpg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-2.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
                             <div class="tp-caption pp_subheader sfl stl tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-300" data-speed="600" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 0px 0px 2px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 620.5px; top: 312.790104947526px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
                                 Switzerland
                             </div>
-                            <!-- LAYER NR. 2 -->
                             <div class="tp-caption pp_header sfr str tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-180" data-speed="600" data-start="1300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 6; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 106px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 75px; left: 534.5px; top: 348.874062968516px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
                                 Zurich
                             </div>
-                            <!-- LAYER NR. 3 -->
                             <div class="tp-caption pp_content sfb stb tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-100" data-speed="600" data-start="1600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 7; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 468.5px; top: 457.596701649175px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
                                 Arctic temperatures and several meters of snow<br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px;">
                                 are no match for the natural impressions and cultural twist <br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px;">
                                 that will warm your soul while dog sledding in Greenland.<br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px;">
                             </div>
                         </li>
-                        <!-- SLIDE  -->
                         <li data-transition="zoomout" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; z-index: 18;">
-                            <!-- MAIN IMAGE -->
                             <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-4.jpg" data-src="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-4.jpg" style="width: 100%; height: 100%; visibility: hidden; opacity: 0; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-4.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
                             <div class="tp-caption pp_subheader sfl stl tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-300" data-speed="600" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 30px; border-width: 0px 0px 2px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 643px; top: 335px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, -50, 0, 0, 1);">
                                 France
                             </div>
-                            <!-- LAYER NR. 2 -->
                             <div class="tp-caption pp_header sfr str tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-180" data-speed="600" data-start="1300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 6; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 114px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 80px; left: 560px; top: 373px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 50, 0, 0, 1);">
                                 Paris
                             </div>
-                            <!-- LAYER NR. 3 -->
                             <div class="tp-caption pp_content sfb stb tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-100" data-speed="600" data-start="1600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 7; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 454.5px; top: 489px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 50, 0, 1);">
                                 Arctic temperatures and several meters of snow<br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px;">
                                 are no match for the natural impressions and cultural twist <br style="-webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px;">
@@ -532,12 +493,6 @@
                     }
                 </style>
                 <script type="text/javascript">
-
-                    /******************************************
-                        -	PREPARE PLACEHOLDER FOR SLIDER	-
-                    ******************************************/
-
-
                     var setREVStartSize = function () {
                         var tpopt = new Object();
                         tpopt.startwidth = 960;
@@ -549,7 +504,6 @@
                         tpopt.container.closest(".rev_slider_wrapper").css({ height: tpopt.container.height() }); tpopt.width = parseInt(tpopt.container.width(), 0); tpopt.height = parseInt(tpopt.container.height(), 0); tpopt.bw = tpopt.width / tpopt.startwidth; tpopt.bh = tpopt.height / tpopt.startheight; if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw; if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh; if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw; if (tpopt.bh > 1) { tpopt.bw = 1; tpopt.bh = 1 } if (tpopt.bw > 1) { tpopt.bw = 1; tpopt.bh = 1 } tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth)); if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight; if (tpopt.fullScreen == "on") { tpopt.height = tpopt.bw * tpopt.startheight; var cow = tpopt.container.parent().width(); var coh = jQuery(window).height(); if (tpopt.fullScreenOffsetContainer != undefined) { try { var offcontainers = tpopt.fullScreenOffsetContainer.split(","); jQuery.each(offcontainers, function (e, t) { coh = coh - jQuery(t).outerHeight(true); if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight }) } catch (e) { } } tpopt.container.parent().height(coh); tpopt.container.height(coh); tpopt.container.closest(".rev_slider_wrapper").height(coh); tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh); tpopt.container.css({ height: "100%" }); tpopt.height = coh; } else { tpopt.container.height(tpopt.height); tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height); tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height); }
                     };
 
-                    /* CALL PLACEHOLDER */
                     setREVStartSize();
 
 
@@ -642,7 +596,7 @@
 
 
                         }
-                    });	/*ready*/
+                    });
 
                 </script>
 
@@ -652,7 +606,7 @@
                     }
                 </style>
                 <div class="tp-bullets simplebullets round" style="bottom: 18.6806596701649px; left: 50%; margin-left: -20px;"><div class="bullet first"></div><div class="bullet selected"></div><div class="bullet last"></div><div class="tpclear"></div></div><div style="position: absolute; top: 292px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default round"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-1.jpg);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div><div style="position: absolute; top: 292px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default round"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-4.jpg);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>
-            </div><!-- END REVOLUTION SLIDER -->
+            </div>
         </div>
         <br>
         <div class="ppb_wrapper  " style="margin-top: 612px;">
@@ -691,7 +645,8 @@
                         <div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
                             <div class="one_third gallery3 filterable gallery_type animated1 fadeIn">
                                 <a href="http://themes.themegoods2.com/altair/tours/grand-turkey/">
-                                    <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-6-560x460.jpg" alt="">
+
+                                    <img src="~/Content/images/1600x1200-6-560x460.jpg" />
                                 </a><div class="thumb_content fullwidth ">
                                     <div class="thumb_title">
                                         <div class="tour_country">
@@ -710,7 +665,7 @@
                         </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(449px, 0px, 0px);">
                             <div class="one_third gallery3 filterable gallery_type animated2 fadeIn">
                                 <a href="http://themes.themegoods2.com/altair/tours/grand-spain-madrid/">
-                                    <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-8-560x460.jpg" alt="">
+                                    <img src="~/Content/images/1600x1200-8-560x460.jpg" />
                                 </a><div class="thumb_content fullwidth ">
                                     <div class="thumb_title">
                                         <div class="tour_country">
@@ -729,7 +684,7 @@
                         </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(898px, 0px, 0px);">
                             <div class="one_third gallery3 filterable gallery_type animated3 fadeIn">
                                 <a href="http://themes.themegoods2.com/altair/tours/swiss-alps-trip/">
-                                    <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-9-560x460.jpg" alt="">
+                                    <img src="~/Content/images/1600x1200-9-560x460.jpg" />
                                 </a><div class="thumb_content fullwidth ">
                                     <div class="thumb_title">
                                         <div class="tour_country">
@@ -748,7 +703,7 @@
                         </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 367px, 0px);">
                             <div class="one_third gallery3 filterable gallery_type animated4 fadeIn">
                                 <a href="http://themes.themegoods2.com/altair/tours/grand-italy/">
-                                    <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-10-560x460.jpg" alt="">
+                                    <img src="~/Content/images/1600x1200-10-560x460.jpg" />
                                 </a><div class="thumb_content fullwidth ">
                                     <div class="thumb_title">
                                         <div class="tour_country">
@@ -767,7 +722,7 @@
                         </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(449px, 367px, 0px);">
                             <div class="one_third gallery3 filterable gallery_type animated5 fadeIn">
                                 <a href="http://themes.themegoods2.com/altair/tours/uk-trip/">
-                                    <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-11-560x460.jpg" alt="">
+                                    <img src="~/Content/images/1600x1200-11-560x460.jpg" />
                                 </a><div class="thumb_content fullwidth ">
                                     <div class="thumb_title">
                                         <div class="tour_country">
@@ -786,7 +741,7 @@
                         </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(898px, 367px, 0px);">
                             <div class="one_third gallery3 filterable gallery_type animated6 fadeIn">
                                 <a href="http://themes.themegoods2.com/altair/tours/east-europe/">
-                                    <img src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/1600x1200-12-560x460.jpg" alt="">
+                                    <img src="~/Content/images/1600x1200-12-560x460.jpg" />
                                 </a><div class="tour_sale fullwidth">
                                     <div class="tour_sale_text">Best Deal</div>
                                     25% Off
@@ -1064,27 +1019,19 @@
         </div>
     </div>
 
+    <script src="~/Scripts/jquery.blockUI.min.js"></script>
+    <script src="~/Scripts/woocommerce.min.js"></script>
+    <script src="~/Scripts/jquery.cookie.min.js"></script>
 
-    <!--<script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/add-to-cart.min.js"></script>-->
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery.blockUI.min.js"></script>
+    <script src="~/Scripts/cart-fragments.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script src="~/Scripts/parallax.min.js"></script>
 
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/woocommerce.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery.cookie.min.js"></script>
-
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/cart-fragments.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/js"></script>
-    <script src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/main.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/parallax.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/combined.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/core.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/datepicker.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/custom-date.js"></script><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/sciprt-testimonials-flexslider.php"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/odometer.min.js"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/script-animate-counter-shortcode.php"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/script-animate-counter-shortcode(1).php"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/script-animate-counter-shortcode(2).php"></script>
-    <script type="text/javascript" src="./Altair _ Stunning Travel Agency Theme » Just another WordPress site_files/script-animate-counter-shortcode(3).php"></script>
+    <script src="~/Scripts/cart-fragments.min.js"></script>
+    <script src="~/Scripts/core.min.js"></script>
+    <script src="~/Scripts/datepicker.min.js"></script>
+    <script src="~/Scripts/custom-date.js"></script>
+    <script src="~/Scripts/jquery.flexslider-min.js"></script>
+    <script src="~/Scripts/odometer.min.js"></script>
 </body>
 </html>
