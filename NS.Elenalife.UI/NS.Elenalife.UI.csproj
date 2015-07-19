@@ -197,6 +197,7 @@
     <Content Include="Content\images\1600x1200-6-560x460.jpg" />
     <Content Include="Content\images\1600x1200-8-560x460.jpg" />
     <Content Include="Content\images\1600x1200-9-560x460.jpg" />
+    <Content Include="Content\images\kazan-main.JPG" />
     <Content Include="Content\images\logo%402x.png" />
     <Content Include="Content\images\logo%402x_white.png" />
     <Content Include="Content\jquery-ui-1.8.24.custom.css" />
@@ -259,9 +260,14 @@
     <Content Include="Content\woocommerce-smallscreen.css" />
     <Content Include="Content\woocommerce.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\sss.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\cart-fragments.min.js" />
     <Content Include="Scripts\combined.js" />
