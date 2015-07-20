@@ -1,0 +1,12 @@
+﻿@{
+    Layout = null;
+}
+@model List<NS.Elenalife.UI.Models.PhotoVm>
+
+<div style="background-color: #f0f0f0; min-height: 400px">
+    @foreach (var img in Model)
+    {
+        <img src="@img.Url"/>
+        <label>@img.Title</label>
+    }
+</div>
