@@ -318,9 +318,9 @@
                         </li>
                         <li data-transition="zoomout" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" class="tp-revslider-slidesli active-revslide current-sr-slide-visible" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;">
                             <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined">
-                                <div id="wallpaper" class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" 
-                                     data-bgrepeat="no-repeat" data-lazydone="undefined" src="~/Content/images/kazan-main.JPG" 
-                                     data-src="~/Content/images/kazan-main.JPG" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; 
+                                <div id="wallpaper" class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top"
+                                     data-bgrepeat="no-repeat" data-lazydone="undefined" src="~/Content/images/kazan-main.JPG"
+                                     data-src="~/Content/images/kazan-main.JPG" style="width: 100%; height: 100%; opacity: 1; visibility: inherit;
                                         background-image: url('/Content/images/kazan-main.JPG'); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div>
                             </div>
                             <div class="tp-caption pp_subheader sfl stl tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-300" data-speed="600" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 0px 0px 2px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 620.5px; top: 312.790104947526px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
@@ -399,113 +399,6 @@
                         border-style: none;
                     }
                 </style>
-                <script type="text/javascript">
-                    var setREVStartSize = function () {
-                        var tpopt = new Object();
-                        tpopt.startwidth = 960;
-                        tpopt.startheight = 0;
-                        tpopt.container = jQuery('#rev_slider_1_1');
-                        tpopt.fullScreen = "on";
-                        tpopt.forceFullWidth = "off";
-
-                        tpopt.container.closest(".rev_slider_wrapper").css({ height: tpopt.container.height() }); tpopt.width = parseInt(tpopt.container.width(), 0); tpopt.height = parseInt(tpopt.container.height(), 0); tpopt.bw = tpopt.width / tpopt.startwidth; tpopt.bh = tpopt.height / tpopt.startheight; if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw; if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh; if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw; if (tpopt.bh > 1) { tpopt.bw = 1; tpopt.bh = 1 } if (tpopt.bw > 1) { tpopt.bw = 1; tpopt.bh = 1 } tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth)); if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight; if (tpopt.fullScreen == "on") { tpopt.height = tpopt.bw * tpopt.startheight; var cow = tpopt.container.parent().width(); var coh = jQuery(window).height(); if (tpopt.fullScreenOffsetContainer != undefined) { try { var offcontainers = tpopt.fullScreenOffsetContainer.split(","); jQuery.each(offcontainers, function (e, t) { coh = coh - jQuery(t).outerHeight(true); if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight }) } catch (e) { } } tpopt.container.parent().height(coh); tpopt.container.height(coh); tpopt.container.closest(".rev_slider_wrapper").height(coh); tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh); tpopt.container.css({ height: "100%" }); tpopt.height = coh; } else { tpopt.container.height(tpopt.height); tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height); tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height); }
-                    };
-
-                    setREVStartSize();
-
-
-                    var tpj = jQuery;
-                    tpj.noConflict();
-                    var revapi1;
-
-                    tpj(document).ready(function () {
-
-                        if (tpj('#rev_slider_1_1').revolution == undefined) {
-                            revslider_showDoubleJqueryError('#rev_slider_1_1');
-                        } else {
-                            revapi1 = tpj('#rev_slider_1_1').show().revolution(
-                            {
-                                dottedOverlay: "none",
-                                delay: 9000,
-                                startwidth: 960,
-                                startheight: 0,
-                                hideThumbs: 200,
-
-                                thumbWidth: 100,
-                                thumbHeight: 50,
-                                thumbAmount: 3,
-
-
-                                simplifyAll: "off",
-
-                                navigationType: "bullet",
-                                navigationArrows: "solo",
-                                navigationStyle: "round",
-
-                                touchenabled: "on",
-                                onHoverStop: "on",
-                                nextSlideOnWindowFocus: "off",
-
-                                swipe_threshold: 75,
-                                swipe_min_touches: 1,
-                                drag_block_vertical: false,
-
-
-
-                                keyboardNavigation: "off",
-
-                                navigationHAlign: "center",
-                                navigationVAlign: "bottom",
-                                navigationHOffset: 0,
-                                navigationVOffset: 20,
-
-                                soloArrowLeftHalign: "left",
-                                soloArrowLeftValign: "center",
-                                soloArrowLeftHOffset: 20,
-                                soloArrowLeftVOffset: 0,
-
-                                soloArrowRightHalign: "right",
-                                soloArrowRightValign: "center",
-                                soloArrowRightHOffset: 20,
-                                soloArrowRightVOffset: 0,
-
-                                shadow: 0,
-                                fullWidth: "off",
-                                fullScreen: "on",
-
-                                spinner: "spinner2",
-
-                                stopLoop: "off",
-                                stopAfterLoops: -1,
-                                stopAtSlide: -1,
-
-                                shuffle: "off",
-
-
-                                forceFullWidth: "off",
-                                fullScreenAlignForce: "off",
-                                minFullScreenHeight: "",
-                                hideTimerBar: "on",
-                                hideThumbsOnMobile: "off",
-                                hideNavDelayOnMobile: 1500,
-                                hideBulletsOnMobile: "off",
-                                hideArrowsOnMobile: "off",
-                                hideThumbsUnderResolution: 0,
-
-                                fullScreenOffsetContainer: "",
-                                fullScreenOffset: "",
-                                hideSliderAtLimit: 0,
-                                hideCaptionAtLimit: 0,
-                                hideAllCaptionAtLilmit: 0,
-                                startWithSlide: 0
-                            });
-
-
-
-                        }
-                    });
-
-                </script>
 
                 <style type="text/css">
                     #rev_slider_1_1_wrapper .tp-loader.spinner2 {
@@ -530,187 +423,30 @@
         <div class="ppb_wrapper  " style="margin-top: 612px;">
             <div class="ppb_tour one withpadding " style="border-top:1px solid #e1e1e1;">
                 <div class="page_content_wrapper full_width" style="text-align:center">
-                    <h2 class="ppb_title">Best Offers</h2><div class="page_caption_desc">Check out our best promotion tours</div><div class="portfolio_filter_wrapper three_cols fullwidth shortcode gallery section content clearfix visible isotope" style="position: relative; overflow: hidden; height: 734px;">
-                        <div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
-                            <div class="one_third gallery3 filterable gallery_type animated1 fadeIn">
-                                <a href="http://themes.themegoods2.com/altair/tours/grand-turkey/">
-
-                                    <img src="~/Content/images/1600x1200-6-560x460.jpg" />
-                                </a><div class="thumb_content fullwidth ">
-                                    <div class="thumb_title">
-                                        <div class="tour_country">
-                                            Turkey
-                                        </div><h3>Grand Turkey</h3>
-                                    </div>
-                                    <div class="thumb_meta">
-                                        <div class="tour_days">
-                                            8 Days
-                                        </div><div class="tour_price">
-                                            $2,000
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(449px, 0px, 0px);">
-                            <div class="one_third gallery3 filterable gallery_type animated2 fadeIn">
-                                <a href="http://themes.themegoods2.com/altair/tours/grand-spain-madrid/">
-                                    <img src="~/Content/images/1600x1200-8-560x460.jpg" />
-                                </a><div class="thumb_content fullwidth ">
-                                    <div class="thumb_title">
-                                        <div class="tour_country">
-                                            Spain
-                                        </div><h3>Grand Spain Madrid</h3>
-                                    </div>
-                                    <div class="thumb_meta">
-                                        <div class="tour_days">
-                                            9 Days
-                                        </div><div class="tour_price">
-                                            $3,000
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(898px, 0px, 0px);">
-                            <div class="one_third gallery3 filterable gallery_type animated3 fadeIn">
-                                <a href="http://themes.themegoods2.com/altair/tours/swiss-alps-trip/">
-                                    <img src="~/Content/images/1600x1200-9-560x460.jpg" />
-                                </a><div class="thumb_content fullwidth ">
-                                    <div class="thumb_title">
-                                        <div class="tour_country">
-                                            Austria, Switzerland
-                                        </div><h3>Swiss Alps Trip</h3>
-                                    </div>
-                                    <div class="thumb_meta">
-                                        <div class="tour_days">
-                                            13 Days
-                                        </div><div class="tour_price">
-                                            $4,000
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 367px, 0px);">
-                            <div class="one_third gallery3 filterable gallery_type animated4 fadeIn">
-                                <a href="http://themes.themegoods2.com/altair/tours/grand-italy/">
-                                    <img src="~/Content/images/1600x1200-10-560x460.jpg" />
-                                </a><div class="thumb_content fullwidth ">
-                                    <div class="thumb_title">
-                                        <div class="tour_country">
-                                            Italy
-                                        </div><h3>Grand Italy</h3>
-                                    </div>
-                                    <div class="thumb_meta">
-                                        <div class="tour_days">
-                                            8 Days
-                                        </div><div class="tour_price">
-                                            $3,000
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(449px, 367px, 0px);">
-                            <div class="one_third gallery3 filterable gallery_type animated5 fadeIn">
-                                <a href="http://themes.themegoods2.com/altair/tours/uk-trip/">
-                                    <img src="~/Content/images/1600x1200-11-560x460.jpg" />
-                                </a><div class="thumb_content fullwidth ">
-                                    <div class="thumb_title">
-                                        <div class="tour_country">
-                                            England, Scotland, Wales
-                                        </div><h3>UK Trip</h3>
-                                    </div>
-                                    <div class="thumb_meta">
-                                        <div class="tour_days">
-                                            13 Days
-                                        </div><div class="tour_price">
-                                            $5,000
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="element portfolio3filter_wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(898px, 367px, 0px);">
-                            <div class="one_third gallery3 filterable gallery_type animated6 fadeIn">
-                                <a href="http://themes.themegoods2.com/altair/tours/east-europe/">
-                                    <img src="~/Content/images/1600x1200-12-560x460.jpg" />
-                                </a><div class="tour_sale fullwidth">
-                                    <div class="tour_sale_text">Best Deal</div>
-                                    25% Off
-                                </div><div class="thumb_content fullwidth ">
-                                    <div class="thumb_title">
-                                        <div class="tour_country">
-                                            Slovenia, Hungary, Czech
-                                        </div><h3>East Europe</h3>
-                                    </div>
-                                    <div class="thumb_meta">
-                                        <div class="tour_days">
-                                            10 Days
-                                        </div><div class="tour_price">
-                                            $3,000
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="ppb_title">Best Offers</h2><div class="page_caption_desc">Check out our best promotion tours</div>
+                    @Html.Partial("~/Views/Home/PlacesGrid.cshtml")
                 </div>
             </div>
-            <div class="one withsmallpadding "><div class="page_content_wrapper" style="text-align:center"><h2 class="ppb_title">What Customers Say</h2><br><div class="testimonial_slider_wrapper"><div class="flexslider" data-height="750"><ul class="slides"><li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"><div class="testimonial_slider_wrapper">Vivamus aliquet felis eu diam ultricies congue. Morbi porta lorem nec consectetur porta. Sed quis dui elit. Pellentesque habitant morbi tristique senectus et netus et male.<div class="testimonial_slider_meta"><h6>Mark Anthony</h6><div class="testimonial_slider_meta_position">CEO</div>-<div class="testimonial_slider_meta_company"><a href="http://themes.themegoods2.com/altair/#" target="_blank">WikiMedia</a></div></div></div></li><li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><div class="testimonial_slider_wrapper">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam. Pellentesque habitant morbi tristique senectus et netus et male.<div class="testimonial_slider_meta"><h6>Christina Hardy</h6><div class="testimonial_slider_meta_position">Marketing Manager</div>-<div class="testimonial_slider_meta_company"><a href="http://themes.themegoods2.com/altair/#" target="_blank">Red Inc.</a></div></div></div></li><li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class=""><div class="testimonial_slider_wrapper">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Pellentesque habitant morbi tristique senectus et netus et male.<div class="testimonial_slider_meta"><h6>Jane Bennett</h6><div class="testimonial_slider_meta_position">Developer</div>-<div class="testimonial_slider_meta_company"><a href="http://themes.themegoods2.com/altair/#" target="_blank">Hubboard Media</a></div></div></div></li></ul></div><ol class="flex-control-nav flex-control-paging"><li><a class="flex-active">1</a></li><li><a class="">2</a></li><li><a class="">3</a></li></ol></div></div></div>
-            <div class="one withsmallpadding withbg fullwidth parallax" style="height:600px;" data-image="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-13.jpg" data-width="1600" data-height="1200"><div class="page_content_wrapper"></div></div>
-            <div class="one withsmallpadding ">
+            
+            <div class="one withsmallpadding " style="background:#f3f3f3;">
                 <div class="page_content_wrapper">
-                    <div style="text-align:center">
-                        <h2 class="ppb_title">Lake Geneva Switzerland</h2>
-                        <div class="page_caption_desc"></div>
+                    <div class="one_fourth">
+                        <div class="animate_counter_wrapper"><i class="fa fa-smile-o"></i><br><div id="14366594541840969743" class="odometer odometer-auto-theme" style="font-size:44px;line-height:44px;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">7</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span></div></div><div class="count_separator"><span></span></div><div class="counter_subject">Happy Customers</div></div>
                     </div>
-                    <div class="two_third">
-                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br>
-                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                    <div class="one_fourth">
+                        <div class="animate_counter_wrapper"><i class="fa fa-bus"></i><br><div id="143665945443587662" class="odometer odometer-auto-theme" style="font-size:44px;line-height:44px;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">9</span></span></span></span></span></div></div><div class="count_separator"><span></span></div><div class="counter_subject">Amazing Tours</div></div>
                     </div>
-                    <div class="one_third last">
-                        <blockquote>
-                            <p>“It was fantastic going on the sled to see the views on the mountains! And the action of it – I loved going fast!”</p>
-                        </blockquote>
+                    <div class="one_fourth">
+                        <div class="animate_counter_wrapper"><i class="fa fa-briefcase"></i><br><div id="143665945444169302" class="odometer odometer-auto-theme" style="font-size:44px;line-height:44px;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">6</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">4</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">9</span></span></span></span></span></div></div><div class="count_separator"><span></span></div><div class="counter_subject">In Business</div></div>
+                    </div>
+                    <div class="one_fourth last">
+                        <div class="animate_counter_wrapper"><i class="fa fa-comments-o"></i><br><div id="14366594541028624828" class="odometer odometer-auto-theme" style="font-size:44px;line-height:44px;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">7</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">6</span></span></span></span></span></div></div><div class="count_separator"><span></span></div><div class="counter_subject">Support Cases</div></div>
                     </div>
                     <p>
                     </p>
                 </div>
             </div>
-            <div class="one withsmallpadding withbg parallax " data-image="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-12.jpg" data-width="1600" data-height="1200">
-                <div class="page_content_wrapper" style="text-align:center">
-                    <h2 class="ppb_title">Why Choose Us</h2><div style="height:20px"></div><br><div class="service_content_wrapper ">
-                        <div class="one_third ">
-                            <div class="service_wrapper">
-                                <div class="service_icon"><i class="fa fa-star"></i></div><div class="service_title">
-                                    <h3>Handpicked Hotels</h3><div class="service_content">
-                                        Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula  eget dolor. Aenean massa
-                                        <br><br>
-                                        <a href="http://themes.themegoods2.com/altair/#">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="one_third ">
-                            <div class="service_wrapper">
-                                <div class="service_icon"><i class="fa fa-globe"></i></div><div class="service_title">
-                                    <h3>World Class Service</h3><div class="service_content">
-                                        Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula  eget dolor. Aenean massa
-                                        <br><br>
-                                        <a href="http://themes.themegoods2.com/altair/#">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="one_third last">
-                            <div class="service_wrapper">
-                                <div class="service_icon"><i class="fa fa-thumbs-up"></i></div><div class="service_title">
-                                    <h3>Best Price Guarantee</h3><div class="service_content">
-                                        Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula  eget dolor. Aenean massa
-                                        <br><br>
-                                        <a href="http://themes.themegoods2.com/altair/#">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><br class="clear"><br>
-                    </div><br class="clear">
-                </div>
-            </div>
+
             <div class="one withsmallpadding " style="background:#f3f3f3;">
                 <div class="page_content_wrapper">
                     <div class="one_fourth">
@@ -890,89 +626,9 @@
             <br class="clear">
         </div>
 
-        <div class="footer_bar_wrapper ">
-            <div class="social_wrapper">
-                <ul>
-                    <li class="facebook"><a href="http://themes.themegoods2.com/altair/#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="twitter"><a href="http://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="flickr"><a title="Flickr" href="http://flickr.com/people/#"><i class="fa fa-flickr"></i></a></li>
-                    <li class="youtube"><a title="Youtube" href="http://youtube.com/channel/#"><i class="fa fa-youtube"></i></a></li>
-                    <li class="vimeo"><a title="Vimeo" href="http://vimeo.com/#"><i class="fa fa-vimeo-square"></i></a></li>
-                    <li class="google"><a title="Google+" href="http://themes.themegoods2.com/altair/#"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="pinterest"><a title="Pinterest" href="http://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                    <li class="instagram"><a title="Instagram" href="http://instagram.com/#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div id="copyright">© Copyright Altair Theme By ThemeGoods</div><br class="clear">
-            <div id="toTop" style="opacity: 0; visibility: hidden; bottom: 0px;"><i class="fa fa-angle-up"></i></div>
-        </div>
+        @Html.Partial("~/Views/Shared/Footer.cshtml")
     </div>
 
-    <script src="~/Scripts/jquery-1.8.2.js"></script>
-    <script src="~/Scripts/jquery.blockUI.min.js"></script>
-    <script src="~/Scripts/woocommerce.min.js"></script>
-    <script src="~/Scripts/jquery.cookie.min.js"></script>
-
-    <script src="~/Scripts/cart-fragments.min.js"></script>
-    <script src="~/Scripts/main.js"></script>
-    <script src="~/Scripts/parallax.min.js"></script>
-
-    <script src="~/Scripts/cart-fragments.min.js"></script>
-    <script src="~/Scripts/core.min.js"></script>
-    <script src="~/Scripts/datepicker.min.js"></script>
-    <script src="~/Scripts/custom-date.js"></script>
-    <script src="~/Scripts/jquery.flexslider-min.js"></script>
-    <script src="~/Scripts/odometer.min.js"></script>
-    <script src="~/Scripts/jquery.bxslider.js"></script>
-    <script>
-        $(document).ready(function () {
-            var i = 0;
-            var images = ['/Content/images/kazan-main.JPG', '/Content/images/kul-sharif.JPG', '/Content/images/shalapin_palas.JPG'];
-            var max = images.length - 1;
-
-            $(document).on('click', '#btn-next', function () {
-                if (i == max) {
-                    i = 0;
-                    $('#wallpaper').fadeOut(500);
-                    setTimeout(function() {
-                        $('#wallpaper').css('background-image', 'url("' + images[0] + '")').fadeIn(500);
-                    }, 500);
-
-                    console.log(i);
-                    return;
-                }
-
-                i++;
-                $('#wallpaper').fadeOut(500);
-                setTimeout(function () {
-                    $('#wallpaper').css('background-image', 'url("' + images[i] + '")').fadeIn(500);
-                }, 500);
-
-                console.log(i);
-            });
-
-            $(document).on('click', '#btn-prev', function () {
-                if (i == 0) {
-                    i = max;
-                    $('#wallpaper').fadeOut(500);
-                    setTimeout(function () {
-                        $('#wallpaper').css('background-image', 'url("' + images[max] + '")').fadeIn(500);
-                    }, 500);
-
-                    console.log(i);
-                    return;
-                }
-
-                i--;
-                $('#wallpaper').fadeOut(500);
-                setTimeout(function () {
-                    $('#wallpaper').css('background-image', 'url("' + images[i] + '")').fadeIn(500);
-                }, 500);
-
-                console.log(i);
-            });
-
-        });
-    </script>
+    @Html.Partial("~/Views/Shared/Wallpapers.cshtml")
 </body>
 </html>
