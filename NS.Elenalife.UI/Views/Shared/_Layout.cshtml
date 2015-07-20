@@ -74,5 +74,16 @@
 </head>
 <body class="home page page-id-3093 page-template page-template-page_f page-template-page_f-php hover">
     @RenderBody()
+    
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '#instagram', function (e) {
+                e.preventDefault();
+                $.get('/Home/Instagram', function(page) {
+                    $('#main').html(page);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
