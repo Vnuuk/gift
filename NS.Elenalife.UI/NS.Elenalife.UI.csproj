@@ -324,6 +324,7 @@
     <Content Include="Views\Shared\Wallpapers.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Home\PlacesGrid.cshtml" />
+    <Content Include="Views\Home\Intro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
