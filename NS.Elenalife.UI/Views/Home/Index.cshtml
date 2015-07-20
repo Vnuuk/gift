@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Altair | Stunning Travel Agency Theme » Just another WordPress site</title>
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="http://themes.themegoods2.com/altair/xmlrpc.php">
-    <link rel="shortcut icon" href="http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/TG-Thumb.png">
+    <title>Elenalife</title>
 
     <meta name="robots" content="noindex,follow">
     <link rel="alternate" type="application/rss+xml" title="Altair | Stunning Travel Agency Theme » Feed" href="http://themes.themegoods2.com/altair/feed/">
@@ -49,11 +46,13 @@
     <link href="~/Content/woocommerce.css" rel="stylesheet" />
     <link href="~/Content/combined.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery.bxslider.css" rel="stylesheet" />
 
     <script src="~/Scripts/jquery-1.8.2.js"></script>
     <script src="~/Scripts/jquery-migrate.min.js"></script>
     <script src="~/Scripts/jquery.themepunch.tools.min.js"></script>
     <script src="~/Scripts/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Scripts/jquery.bxslider.js"></script>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://themes.themegoods2.com/altair/xmlrpc.php?rsd">
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://themes.themegoods2.com/altair/wp-includes/wlwmanifest.xml">
     <script type="text/javascript">
@@ -88,19 +87,24 @@
         });
     </script>
     <style type="text/css">
-             .recentcomments a {
-                 display: inline !important;
-                 padding: 0 !important;
-                 margin: 0 !important;
-             }
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
 
         @@font-face {
             font-family: Raleway;
             src: url(../../fonts/fontawesome-webfont.ttf);
-            }
+        }
 
         html, body, div {
-            font-family: 'Raleway', 'Helvetica Neue', Arial, Verdana, sans-serif!important;
+            font-family: 'Raleway', 'Helvetica Neue', Arial, Verdana, sans-serif !important;
+        }
+
+        .menu-item > a > span {
+            background-color: rgba(30, 144, 255, 0.7) !important;
+            padding: 5px !important;
         }
     </style>
 </head>
@@ -292,7 +296,12 @@
         <div class="page_slider menu_transparent">
             <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" style="padding: 0px; height: 623px; max-height: none; overflow: visible; background-color: rgb(0, 0, 0);">
                 <div id="rev_slider_1_1" class="rev_slider fullscreenbanner revslider-initialised tp-simpleresponsive hovered" style="height: 100%; max-height: none;">
-                    <ul class="tp-revslider-mainul" style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+                    @*<ul class="bxslider">
+                            <li><img src="/images/730_200/tree_root.jpg" title="Funky roots" /></li>
+                            <li><img src="/images/730_200/hill_road.jpg" title="The long and winding road" /></li>
+                            <li><img src="/images/730_200/trees.jpg" title="Happy trees" /></li>
+                        </ul>*@
+                    <ul class="bxslider tp-revslider-mainul" style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
                         <li data-transition="zoomout" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;">
                             <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="" data-src="~/Content/images/kazan-main.JPG" style="width: 100%; height: 100%; opacity: 1; visibility: hidden; background-image: url('/Content/images/kazan-main.JPG'); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
                             <div class="tp-caption pp_subheader sfl stl tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-300" data-speed="600" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 30px; border-width: 0px 0px 2px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 652px; top: 335px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, -50, 0, 0, 1);">
@@ -308,7 +317,12 @@
                             </div>
                         </li>
                         <li data-transition="zoomout" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" class="tp-revslider-slidesli active-revslide current-sr-slide-visible" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;">
-                            <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="~/Content/images/kazan-main.JPG" data-src="~/Content/images/kazan-main.JPG" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url('/Content/images/kazan-main.JPG'); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
+                            <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined">
+                                <div id="wallpaper" class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" 
+                                     data-bgrepeat="no-repeat" data-lazydone="undefined" src="~/Content/images/kazan-main.JPG" 
+                                     data-src="~/Content/images/kazan-main.JPG" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; 
+                                        background-image: url('/Content/images/kazan-main.JPG'); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div>
+                            </div>
                             <div class="tp-caption pp_subheader sfl stl tp-resizeme start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-300" data-speed="600" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; white-space: nowrap; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 0px 0px 2px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 15px; left: 620.5px; top: 312.790104947526px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
                                 Switzerland
                             </div>
@@ -410,81 +424,81 @@
                             revslider_showDoubleJqueryError('#rev_slider_1_1');
                         } else {
                             revapi1 = tpj('#rev_slider_1_1').show().revolution(
-                             {
-                                 dottedOverlay: "none",
-                                 delay: 9000,
-                                 startwidth: 960,
-                                 startheight: 0,
-                                 hideThumbs: 200,
+                            {
+                                dottedOverlay: "none",
+                                delay: 9000,
+                                startwidth: 960,
+                                startheight: 0,
+                                hideThumbs: 200,
 
-                                 thumbWidth: 100,
-                                 thumbHeight: 50,
-                                 thumbAmount: 3,
-
-
-                                 simplifyAll: "off",
-
-                                 navigationType: "bullet",
-                                 navigationArrows: "solo",
-                                 navigationStyle: "round",
-
-                                 touchenabled: "on",
-                                 onHoverStop: "on",
-                                 nextSlideOnWindowFocus: "off",
-
-                                 swipe_threshold: 75,
-                                 swipe_min_touches: 1,
-                                 drag_block_vertical: false,
+                                thumbWidth: 100,
+                                thumbHeight: 50,
+                                thumbAmount: 3,
 
 
+                                simplifyAll: "off",
 
-                                 keyboardNavigation: "off",
+                                navigationType: "bullet",
+                                navigationArrows: "solo",
+                                navigationStyle: "round",
 
-                                 navigationHAlign: "center",
-                                 navigationVAlign: "bottom",
-                                 navigationHOffset: 0,
-                                 navigationVOffset: 20,
+                                touchenabled: "on",
+                                onHoverStop: "on",
+                                nextSlideOnWindowFocus: "off",
 
-                                 soloArrowLeftHalign: "left",
-                                 soloArrowLeftValign: "center",
-                                 soloArrowLeftHOffset: 20,
-                                 soloArrowLeftVOffset: 0,
-
-                                 soloArrowRightHalign: "right",
-                                 soloArrowRightValign: "center",
-                                 soloArrowRightHOffset: 20,
-                                 soloArrowRightVOffset: 0,
-
-                                 shadow: 0,
-                                 fullWidth: "off",
-                                 fullScreen: "on",
-
-                                 spinner: "spinner2",
-
-                                 stopLoop: "off",
-                                 stopAfterLoops: -1,
-                                 stopAtSlide: -1,
-
-                                 shuffle: "off",
+                                swipe_threshold: 75,
+                                swipe_min_touches: 1,
+                                drag_block_vertical: false,
 
 
-                                 forceFullWidth: "off",
-                                 fullScreenAlignForce: "off",
-                                 minFullScreenHeight: "",
-                                 hideTimerBar: "on",
-                                 hideThumbsOnMobile: "off",
-                                 hideNavDelayOnMobile: 1500,
-                                 hideBulletsOnMobile: "off",
-                                 hideArrowsOnMobile: "off",
-                                 hideThumbsUnderResolution: 0,
 
-                                 fullScreenOffsetContainer: "",
-                                 fullScreenOffset: "",
-                                 hideSliderAtLimit: 0,
-                                 hideCaptionAtLimit: 0,
-                                 hideAllCaptionAtLilmit: 0,
-                                 startWithSlide: 0
-                             });
+                                keyboardNavigation: "off",
+
+                                navigationHAlign: "center",
+                                navigationVAlign: "bottom",
+                                navigationHOffset: 0,
+                                navigationVOffset: 20,
+
+                                soloArrowLeftHalign: "left",
+                                soloArrowLeftValign: "center",
+                                soloArrowLeftHOffset: 20,
+                                soloArrowLeftVOffset: 0,
+
+                                soloArrowRightHalign: "right",
+                                soloArrowRightValign: "center",
+                                soloArrowRightHOffset: 20,
+                                soloArrowRightVOffset: 0,
+
+                                shadow: 0,
+                                fullWidth: "off",
+                                fullScreen: "on",
+
+                                spinner: "spinner2",
+
+                                stopLoop: "off",
+                                stopAfterLoops: -1,
+                                stopAtSlide: -1,
+
+                                shuffle: "off",
+
+
+                                forceFullWidth: "off",
+                                fullScreenAlignForce: "off",
+                                minFullScreenHeight: "",
+                                hideTimerBar: "on",
+                                hideThumbsOnMobile: "off",
+                                hideNavDelayOnMobile: 1500,
+                                hideBulletsOnMobile: "off",
+                                hideArrowsOnMobile: "off",
+                                hideThumbsUnderResolution: 0,
+
+                                fullScreenOffsetContainer: "",
+                                fullScreenOffset: "",
+                                hideSliderAtLimit: 0,
+                                hideCaptionAtLimit: 0,
+                                hideAllCaptionAtLilmit: 0,
+                                startWithSlide: 0
+                            });
 
 
 
@@ -498,7 +512,18 @@
                         background-color: #ffffff !important;
                     }
                 </style>
-                <div class="tp-bullets simplebullets round" style="bottom: 18.6806596701649px; left: 50%; margin-left: -20px;"><div class="bullet first"></div><div class="bullet selected"></div><div class="bullet last"></div><div class="tpclear"></div></div><div style="position: absolute; top: 292px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default round"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-1.jpg);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div><div style="position: absolute; top: 292px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default round"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-4.jpg);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>
+                <div class="tp-bullets simplebullets round" style="bottom: 18.6806596701649px; left: 50%; margin-left: -20px;">
+                    <div class="bullet first"></div><div class="bullet selected"></div><div class="bullet last"></div><div class="tpclear"></div>
+                </div>
+                <div id="btn-prev" style="position: absolute; top: 292px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default round">
+                    <div class="tp-arr-allwrapper">
+                        <div class="tp-arr-iwrapper">
+                            <div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-1.jpg);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder">
+
+                            </div>
+                        </div>
+                    </div>
+                </div><div id="btn-next" style="position: absolute; top: 292px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default round"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(http://themes.themegoods2.com/altair/wp-content/uploads/2014/10/1600x1200-4.jpg);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>
             </div>
         </div>
         <br>
@@ -883,6 +908,7 @@
         </div>
     </div>
 
+    <script src="~/Scripts/jquery-1.8.2.js"></script>
     <script src="~/Scripts/jquery.blockUI.min.js"></script>
     <script src="~/Scripts/woocommerce.min.js"></script>
     <script src="~/Scripts/jquery.cookie.min.js"></script>
@@ -897,5 +923,56 @@
     <script src="~/Scripts/custom-date.js"></script>
     <script src="~/Scripts/jquery.flexslider-min.js"></script>
     <script src="~/Scripts/odometer.min.js"></script>
+    <script src="~/Scripts/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            var i = 0;
+            var images = ['/Content/images/kazan-main.JPG', '/Content/images/kul-sharif.JPG', '/Content/images/shalapin_palas.JPG'];
+            var max = images.length - 1;
+
+            $(document).on('click', '#btn-next', function () {
+                if (i == max) {
+                    i = 0;
+                    $('#wallpaper').fadeOut(500);
+                    setTimeout(function() {
+                        $('#wallpaper').css('background-image', 'url("' + images[0] + '")').fadeIn(500);
+                    }, 500);
+
+                    console.log(i);
+                    return;
+                }
+
+                i++;
+                $('#wallpaper').fadeOut(500);
+                setTimeout(function () {
+                    $('#wallpaper').css('background-image', 'url("' + images[i] + '")').fadeIn(500);
+                }, 500);
+
+                console.log(i);
+            });
+
+            $(document).on('click', '#btn-prev', function () {
+                if (i == 0) {
+                    i = max;
+                    $('#wallpaper').fadeOut(500);
+                    setTimeout(function () {
+                        $('#wallpaper').css('background-image', 'url("' + images[max] + '")').fadeIn(500);
+                    }, 500);
+
+                    console.log(i);
+                    return;
+                }
+
+                i--;
+                $('#wallpaper').fadeOut(500);
+                setTimeout(function () {
+                    $('#wallpaper').css('background-image', 'url("' + images[i] + '")').fadeIn(500);
+                }, 500);
+
+                console.log(i);
+            });
+
+        });
+    </script>
 </body>
 </html>

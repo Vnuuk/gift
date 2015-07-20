@@ -197,10 +197,15 @@
     <Content Include="Content\images\1600x1200-6-560x460.jpg" />
     <Content Include="Content\images\1600x1200-8-560x460.jpg" />
     <Content Include="Content\images\1600x1200-9-560x460.jpg" />
+    <Content Include="Content\images\bx_loader.gif" />
+    <Content Include="Content\images\controls.png" />
     <Content Include="Content\images\kazan-main.JPG" />
+    <Content Include="Content\images\kul-sharif.JPG" />
     <Content Include="Content\images\logo%402x.png" />
     <Content Include="Content\images\logo%402x_white.png" />
+    <Content Include="Content\images\shalapin_palas.JPG" />
     <Content Include="Content\jquery-ui-1.8.24.custom.css" />
+    <Content Include="Content\jquery.bxslider.css" />
     <Content Include="Content\settings.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -282,6 +287,7 @@
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
     <Content Include="Scripts\jquery.blockUI.min.js" />
+    <Content Include="Scripts\jquery.bxslider.js" />
     <Content Include="Scripts\jquery.cookie.min.js" />
     <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
