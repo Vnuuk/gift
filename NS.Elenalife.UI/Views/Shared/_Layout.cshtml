@@ -269,10 +269,19 @@
                     });
                 }
 
+                function loadCreateTravelPage() {
+                    $.get('/Admin/CreateTravel', function (page) {
+                        $('#main').html(page);
+                    });
+                }
+
+
                 $(document).ready(function () {
                     switch (document.location.hash) {
                         case "#!instaroom":
                             loadInstaroom();
+                        case "#!admin/travel/add":
+                            loadCreateTravelPage();
                     }
 
                     $(document).on('click', '#instagram', function (e) {
