@@ -328,7 +328,12 @@
     <Content Include="Views\Home\Intro.cshtml" />
     <Content Include="Views\Home\Instagram.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\NS.Elenalife.Domain\NS.Elenalife.Domain.csproj">
+      <Project>{47CB5F98-C16C-4E57-A6A2-C05A9C197BE1}</Project>
+      <Name>NS.Elenalife.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
