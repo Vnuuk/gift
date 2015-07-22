@@ -182,6 +182,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TravelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,8 +204,10 @@
     <Content Include="Content\images\controls.png" />
     <Content Include="Content\images\kazan-main.JPG" />
     <Content Include="Content\images\kul-sharif.JPG" />
+    <Content Include="Content\images\kul_sharif.JPG" />
     <Content Include="Content\images\logo%402x.png" />
     <Content Include="Content\images\logo%402x_white.png" />
+    <Content Include="Content\images\september.jpg" />
     <Content Include="Content\images\shalapin_palas.JPG" />
     <Content Include="Content\jquery-ui-1.8.24.custom.css" />
     <Content Include="Content\jquery.bxslider.css" />
@@ -329,6 +332,7 @@
     <Content Include="Views\Home\Intro.cshtml" />
     <Content Include="Views\Home\Instagram.cshtml" />
     <Content Include="Views\Admin\AddEditTravel.cshtml" />
+    <Content Include="Views\Travel\Posters.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NS.Elenalife.Domain\NS.Elenalife.Domain.csproj">
