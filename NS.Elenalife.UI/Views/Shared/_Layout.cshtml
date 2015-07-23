@@ -226,7 +226,7 @@
 
 
                     <a id="custom_logo_transparent" class="logo_wrapper default" href="http://themes.themegoods2.com/altair">
-                        <img src="~/Content/images/logo@2x_white.png" />
+                        <img style=" height: 60px;" src="~/Content/images/logo@2x_white.png" />
                     </a>
 
                     <div id="nav_wrapper">
@@ -239,7 +239,7 @@
                                             <a href="#"><span>Заметки</span></a>
                                         </li>
                                         <li class="megamenu col4 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8">
-                                            <a href="#"><span>Карта</span></a>
+                                            <a href="#!travel/world/map"><span>Карта</span></a>
                                         </li>
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7">
                                             <a href="http://themes.themegoods2.com/altair/#"><span>Обо мне</span></a>
@@ -281,6 +281,11 @@
             });
         }
 
+        function loadMap() {
+            $.get('/Travel/Map', function (page) {
+                $('#main').html(page);
+            });
+        }
 
 
         $(document).ready(function () {
@@ -291,6 +296,9 @@
                     loadCreateTravelPage();
                 case "#!travel/posters":
                     loadTravelPosters();
+                case "#!travel/world/map":
+                    loadTravelPosters();
+
             }
 
             $(document).on('click', '#instagram', function (e) {

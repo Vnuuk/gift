@@ -214,11 +214,14 @@
     <Content Include="Content\images\flight_red.png" />
     <Content Include="Content\images\hotel.png" />
     <Content Include="Content\images\hotel_red.png" />
+    <Content Include="Content\images\IMG_1368.JPG" />
     <Content Include="Content\images\kazan-main.JPG" />
     <Content Include="Content\images\kul-sharif.JPG" />
     <Content Include="Content\images\kul_sharif.JPG" />
     <Content Include="Content\images\logo%402x.png" />
     <Content Include="Content\images\logo%402x_white.png" />
+    <Content Include="Content\images\maneshka.JPG" />
+    <Content Include="Content\images\mommy.png" />
     <Content Include="Content\images\place.png" />
     <Content Include="Content\images\place_red.png" />
     <Content Include="Content\images\restaurant.png" />
@@ -349,6 +352,7 @@
     <Content Include="Views\Home\Instagram.cshtml" />
     <Content Include="Views\Admin\AddEditTravel.cshtml" />
     <Content Include="Views\Travel\Posters.cshtml" />
+    <Content Include="Views\Travel\Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NS.Elenalife.Domain\NS.Elenalife.Domain.csproj">

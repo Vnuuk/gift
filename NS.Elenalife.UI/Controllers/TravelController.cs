@@ -8,5 +8,10 @@ namespace NS.Elenalife.UI.Controllers
         {
             return View("Posters");
         }
+
+        public ActionResult Map()
+        {
+            return View();
+        }
     }
 }
