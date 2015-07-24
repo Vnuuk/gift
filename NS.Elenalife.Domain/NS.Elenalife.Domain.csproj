@@ -80,6 +80,7 @@
     <Compile Include="CQRS\Commands\CreateTravelCommand.cs" />
     <Compile Include="Infrastructure\Bootstrapper.cs" />
     <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\MyCityPoster.cs" />
     <Compile Include="Models\Travel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
