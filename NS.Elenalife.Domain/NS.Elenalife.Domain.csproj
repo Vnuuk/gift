@@ -77,10 +77,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CQRS\Commands\CreateTravelCommand.cs" />
+    <Compile Include="CQRS\Commands\AddEditFirstSectionPosterCmd.cs" />
+    <Compile Include="CQRS\Commands\CreateTravelCmd.cs" />
     <Compile Include="Infrastructure\Bootstrapper.cs" />
+    <Compile Include="Models\FirstSectionPoster.cs" />
     <Compile Include="Models\Image.cs" />
-    <Compile Include="Models\MyCityPoster.cs" />
     <Compile Include="Models\Travel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
