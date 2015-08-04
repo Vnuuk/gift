@@ -1,17 +1,366 @@
-﻿@using Incoding.MvcContrib
-@using NS.Elenalife.Domain.CQRS.Commands
-<div id="main">
-    //Основной контейнер
-
-    @*@(Html.When(JqueryBind.Click)
-                .AjaxPost(Url.Dispatcher().Push(new AddEditFirstSectionPosterCmd()))
-        .AsHtmlAttributes()
-        .ToButton("Run"))*@
-    
-    @(Html.When(JqueryBind.Click)
-                .AjaxPost(Url.Dispatcher().Push(new AddEditFirstSectionPosterCmd()))
-        .AsHtmlAttributes()
-        .ToLink(""))
-
-
-</div>
+﻿    <div id="intro" class="cd-el-bg">
+        <!-- ================================================= Top-Bar ============================================================ -->
+        <nav id="top-bar-menu" class="top-bar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header navbar-mob-size el-navbar">
+                    <button type="button" class="navbar-toggle collapsed btn-collapsed nav-btn-collapsed"
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo-sm" href="@Url.Action("Index", "Home")"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right btn-top-bar">
+                        <li><a href="@Url.Action("Index", "travels")">Путешествия</a></li>
+                        <li><a href="@Url.Action("Index", "notes")">Заметки</a></li>
+                        <li><a href="@Url.Action("Index", "maps")">Карта</a></li>
+                        <li><a href="@Url.Action("Index", "about")">Обо мне</a></li>
+                        <li><a href="@Url.Action("Index", "instagram")">Инстаграм</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ================================================= End of Top-Bar ============================================================ -->
+        <!-- ================================================= Content-section-1 ============================================================ -->
+        <div class="section-1">
+            <nav id="next-btn">
+                <a href="#" class="icon-next"></a>
+            </nav>
+            <nav id="previous-btn">
+                <a href="#" class="icon-previous"></a>
+            </nav>
+            <div class="container">
+                <div class="wow fadeInUp delay-07s">
+                    <div class="content-section-1">
+                        <h4>lorem ipsum</h4>
+                        <hr />
+                        <h1>Казань</h1>
+                        <p>
+                            At ipsum vitae est lacinia tincidunt.
+                            Maecenas elit orci,gravida ut, molestie
+                            non, venenatis vel, lorem. Sedlacinia.
+                        </p>
+                    </div>
+                </div>
+                <div class="helper-el wow fadeInUp delay-1s">
+                    <span class="swipe-helper"></span>
+                </div>
+            </div>
+        </div>
+        <!-- ================================================= End of Content-section-1 ============================================================ -->
+    </div>
+    <!-- ================================================= Section-2 (inf from trips) ============================================================ -->
+    <div class="section-2">
+        <div class="container">
+            <div class="section-2-container">
+                <!-- range-1 -->
+                <div class="wow fadeInUp delay-4">
+                    <div class="col-md-12 subsection-s2">
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-city"></div>
+                                </a>
+                                <h2>8</h2>
+                                <p>
+                                    Lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-dog"></div>
+                                </a>
+                                <h2>6</h2>
+                                <p>
+                                    Dolor sit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-restaurant"></div>
+                                </a>
+                                <h2>1</h2>
+                                <p>
+                                    Amet
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-days"></div>
+                                </a>
+                                <h2>4</h2>
+                                <p>
+                                    Consectetuer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of range-1 -->
+                <!-- range-2 -->
+                <div class="wow fadeInUp delay-07s">
+                    <div class="col-md-12 subsection-s2">
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-flight"></div>
+                                </a>
+                                <h2>2</h2>
+                                <p>
+                                    adipiscing
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-hotel"></div>
+                                </a>
+                                <h2>3</h2>
+                                <p>
+                                    Duis tellus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-place"></div>
+                                </a>
+                                <h2>5</h2>
+                                <p>
+                                    Donec ante
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="icons-s2">
+                                <a href="#">
+                                    <div class="item-s2 ic-country"></div>
+                                </a>
+                                <h2>6</h2>
+                                <p>
+                                    Mauris
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of range-2 -->
+            </div>
+        </div>
+    </div>
+    <!-- ================================================= End of Section-2 ============================================================ -->
+    <!-- ================================================= Section-3 (gallery section) ============================================================ -->
+    <div class="section-3">
+        <div class="container">
+            <div class="wow fadeInUp delay-4">
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </div>
+            <div class="wow fadeInUp delay-07s">
+                <span class="title-line-1"></span>
+                <span class="title-line-2"></span>
+            </div>
+            <!-- row-1 -->
+            <div class="col-md-4">
+                <div class="place-travel img-kul_sharif">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-maneshka">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">11 days</p><br>
+                        <p class="date-travel">11/21/2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-shalapin_palas">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of row-1 -->
+            <!-- row-2 -->
+            <div class="col-md-4">
+                <div class="place-travel img-maneshka">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">11 days</p><br>
+                        <p class="date-travel">11/21/2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-shalapin_palas">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-kul_sharif">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of row-2 -->
+        </div>
+    </div>
+    <!-- ================================================= End of Section-3 ============================================================ -->
+    <!-- ================================================= Section-4 ( 2 gallery section ) ============================================================ -->
+    <div class="section-3 style-section-4">
+        <div class="container">
+            <div class="wow fadeInUp delay-4">
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </div>
+            <div class="wow fadeInUp delay-07s">
+                <span class="title-line-1"></span>
+                <span class="title-line-2"></span>
+            </div>
+            <!-- row-1 -->
+            <div class="col-md-4">
+                <div class="place-travel img-kul_sharif">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-maneshka">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">11 days</p><br>
+                        <p class="date-travel">11/21/2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-shalapin_palas">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of row-1 -->
+            <!-- row-2 -->
+            <div class="col-md-4">
+                <div class="place-travel img-maneshka">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">11 days</p><br>
+                        <p class="date-travel">11/21/2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-shalapin_palas">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-travel img-kul_sharif">
+                    <div class="content-place">
+                        <p class="name-city">Name Sity</p><br>
+                        <p class="name-country">Name Country</p>
+                        <p class="qty-days">15 days</p><br>
+                        <p class="date-travel">7/27/2014</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of row-2 -->
+        </div>
+    </div>
+    <!-- ================================================= End of Section-4 ============================================================ -->
+    <!-- ================================================= Contact Us ============================================================ -->
+    <div class="contact-us">
+        <div class="container">
+            <div class="col-md-4">
+                <div class="logo-white"></div>
+                <p class="slogan">
+                    Fusce tincidunt, lorem nev dapibusconsectetuer.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <ul class="contact-us-inf">
+                    <li class="wow fadeInRight delay-contact-2">
+                        <span class="ic ic-internet"></span>
+                        <p>loremipsum.com</p>
+                    </li>
+                    <li class="wow fadeInRight delay-2">
+                        <span class="ic ic-email"></span>
+                        <p>loremipsum@gmail.com</p>
+                    </li>
+                    <li class="wow fadeInRight delay-0_35s">
+                        <span class="ic ic-telephone"></span>
+                        <p>8 (904) 346-71-24</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================= End of Contact Us ============================================================ -->
+    <!-- ================================================= Footer ============================================================ -->
+    <div class="footer">
+        <div class="container">
+            <div class="soc-btns">
+                <a href="">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-flickr"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <p class="copyright">© COPYRIGHT NEUTRINO SOFT</p>
+        </div>
+    </div>
+    <!-- ================================================= End of Footer ============================================================ -->
