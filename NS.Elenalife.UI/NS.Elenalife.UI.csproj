@@ -304,6 +304,7 @@
     <Content Include="img\bg-s4.jpg" />
     <Content Include="img\bg-test-2.jpg" />
     <Content Include="img\bg-test-3.jpg" />
+    <Content Include="img\divnomorsk.jpg" />
     <Content Include="img\el-favicon.png" />
     <Content Include="img\el-logo-white.png" />
     <Content Include="img\el-logo.png" />
@@ -333,9 +334,11 @@
     <Content Include="img\kul_sharif-1600x1200.jpg" />
     <Content Include="img\maneshka-640x320.jpg" />
     <Content Include="img\scroll-helper.png" />
+    <Content Include="img\seabay.jpg" />
     <Content Include="img\shalapin_palas-1600x1200.jpg" />
     <Content Include="img\swipe-helper.png" />
     <Content Include="img\swipe-helper1.png" />
+    <Content Include="img\yandex.JPG" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery.1.11.1.js" />
     <Content Include="js\jquery.localscroll-1.2.7-min.js" />

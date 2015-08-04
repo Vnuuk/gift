@@ -6,26 +6,6 @@ namespace NS.Elenalife.UI.Controllers
     {
         public ActionResult Index()
         {
-            return View();   
-        }
-
-        public ActionResult Notes()
-        {
-            return View();
-        }
-
-        public ActionResult Maps()
-        {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult Instagram()
-        {
             return View();
         }
     }
