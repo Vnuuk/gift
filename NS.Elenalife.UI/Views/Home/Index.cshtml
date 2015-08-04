@@ -1,8 +1,17 @@
-﻿<div id="main">
+﻿@using Incoding.MvcContrib
+@using NS.Elenalife.Domain.CQRS.Commands
+<div id="main">
     //Основной контейнер
 
     @*@(Html.When(JqueryBind.Click)
                 .AjaxPost(Url.Dispatcher().Push(new AddEditFirstSectionPosterCmd()))
         .AsHtmlAttributes()
         .ToButton("Run"))*@
+    
+    @(Html.When(JqueryBind.Click)
+                .AjaxPost(Url.Dispatcher().Push(new AddEditFirstSectionPosterCmd()))
+        .AsHtmlAttributes()
+        .ToLink(""))
+
+
 </div>
