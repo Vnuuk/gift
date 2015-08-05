@@ -304,6 +304,8 @@
     <Content Include="img\bg-s4.jpg" />
     <Content Include="img\bg-test-2.jpg" />
     <Content Include="img\bg-test-3.jpg" />
+    <Content Include="img\charli.jpg" />
+    <Content Include="img\checkhov.JPG" />
     <Content Include="img\divnomorsk.jpg" />
     <Content Include="img\el-favicon.png" />
     <Content Include="img\el-logo-white.png" />
@@ -332,7 +334,11 @@
     <Content Include="img\insta-8.jpg" />
     <Content Include="img\it-bg-2.jpg" />
     <Content Include="img\kul_sharif-1600x1200.jpg" />
+    <Content Include="img\mamma_pizza.JPG" />
     <Content Include="img\maneshka-640x320.jpg" />
+    <Content Include="img\ozero.JPG" />
+    <Content Include="img\Pascal.JPG" />
+    <Content Include="img\paskal_sea.JPG" />
     <Content Include="img\scroll-helper.png" />
     <Content Include="img\seabay.jpg" />
     <Content Include="img\shalapin_palas-1600x1200.jpg" />

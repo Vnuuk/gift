@@ -167,6 +167,6 @@ C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\ko\System.Spatial.resources.dll
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\ru\System.Spatial.resources.dll
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.csprojResolveAssemblyReference.cache
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.dll
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.pdb
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.csprojResolveAssemblyReference.cache
