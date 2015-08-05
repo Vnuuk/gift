@@ -310,6 +310,7 @@
     <Content Include="img\el-favicon.png" />
     <Content Include="img\el-logo-white.png" />
     <Content Include="img\el-logo.png" />
+    <Content Include="img\gum.JPG" />
     <Content Include="img\ic-city.png" />
     <Content Include="img\ic-country.png" />
     <Content Include="img\ic-days.png" />
@@ -339,6 +340,7 @@
     <Content Include="img\ozero.JPG" />
     <Content Include="img\Pascal.JPG" />
     <Content Include="img\paskal_sea.JPG" />
+    <Content Include="img\Poster_kazan.jpg" />
     <Content Include="img\scroll-helper.png" />
     <Content Include="img\seabay.jpg" />
     <Content Include="img\shalapin_palas-1600x1200.jpg" />
