@@ -291,6 +291,7 @@
     <Content Include="img\7.jpg" />
     <Content Include="img\8.jpg" />
     <Content Include="img\9.jpg" />
+    <Content Include="img\about.jpg" />
     <Content Include="img\apple-touch-icon-114-precomposed.png" />
     <Content Include="img\apple-touch-icon-144-precomposed.png" />
     <Content Include="img\apple-touch-icon-57-precomposed.png" />
