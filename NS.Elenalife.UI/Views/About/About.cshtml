@@ -1,0 +1,53 @@
+﻿<link href="~/Content/about-me.css" rel="stylesheet" />
+
+<div id="am-page" class="am-el-bg">
+    <!-- ================================================= Top-Bar ============================================================ -->
+    <nav id="top-bar-menu" class="top-bar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header navbar-mob-size el-navbar">
+                <button type="button" class="navbar-toggle collapsed btn-collapsed nav-btn-collapsed"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-sm" href="@Url.Action("Index", "Home")"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right btn-top-bar">
+                    <li><a href="@Url.Action("Index", "travels")">Путешествия</a></li>
+                    <li><a href="@Url.Action("Index", "notes")">Заметки</a></li>
+                    <li><a href="@Url.Action("Index", "maps")">Карта</a></li>
+                    <li><a href="@Url.Action("Index", "about")">Обо мне</a></li>
+                    <li><a href="@Url.Action("Index", "instagram")">Инстаграм</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================================================= End of Top-Bar ============================================================ -->
+    <!-- ================================================= my map section ============================================================ -->
+    <div class="about-me-section">
+        <div class="container">
+            <div class="wow fadeInUp delay-4">
+                <h1 class="tit-section">About me ipsum dolor sit amet</h1>
+            </div>
+            <div class="wow fadeInUp delay-07s">
+                <span class="title-line-1"></span>
+                <span class="title-line-2"></span>
+            </div>
+            <div class="about-me-block">
+                <img src="~/img/insta-6.jpg" />
+                <div class="about-me-comment">
+                    <p>
+                        Lorem Ipsum dolor sit amet,
+                        consectetuer adipiscingelit.
+                        Duis tellus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================= End of my map section ============================================================ -->
+</div>

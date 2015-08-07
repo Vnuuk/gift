@@ -1,0 +1,127 @@
+/* ====================================================== notes ============================================================ */
+.notes-el-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover !important;
+    background-position: center center;
+    /*z-index: 1;*/
+    padding-bottom: 50px;
+}
+
+#notes-page {
+    background: url(../img/bg-notes.jpg) 50% 0 no-repeat fixed;
+}
+
+.notes-section {
+    padding-top: 150px;
+}
+
+.notes-section h1 {
+    font-family: "Raleway Medium", sans-serif;
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.note-block {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 1px;
+    padding: 20px 28px;
+    background-color: #fff;
+}
+
+.note-block p {
+    color: #616161;
+    margin: 0;
+    line-height: 15px;
+    font-family: "Raleway Medium", sans-serif;
+    font-size: 13px;
+}
+
+.note-block .title-note {
+    color: #616161;
+    margin: 1px 0 3px 0;
+    font-family: "Raleway Bold";
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.note-block .date-note {
+    float: right;
+    color: #999;
+    font-family: "Raleway Medium";
+    margin: 7px 0 0 0;
+}
+
+
+/* ====================================================== End of notes ============================================================ */
+
+/* ====================================================== RESPONSIVE ============================================================ */
+/* MAX-WIDTH INQUIRIES */
+@media only screen and (max-width: 991px) {
+    .notes-section {
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .notes-section h1 {
+        font-size: 18px !important;
+    }
+
+    .notes-section {
+        padding-top: 80px;
+    }
+
+    .note-block .title-note {
+        font-size: 17px;
+    }
+
+    .note-block p {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .note-block {
+        width: 270px;
+    }
+
+    .note-block .date-note {
+        margin: 3px 0 0 0;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+}
+
+@media only screen and (max-width: 520px) {
+    .tit-section {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    #top-bar-menu a.navbar-brand {
+        margin: 14px 15px 14px -5px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+}
+/* End of MAX-WIDTH INQUIRIES */
+
+/* MIN-WIDTH INQUIRIES */
+@media only screen and (min-width: 1200px) {
+}
+/* End of MIN-WIDTH INQUIRIES */
+
+/* MAX-HEIGHT INQUIRIES */
+@media only screen and (max-height: 790px) {
+}
+/* End of MAX-HEIGHT INQUIRIES */
+
+/* MIN-HEIGHT INQUIRIES */
+/* End of MIN-HEIGHT INQUIRIES */
+/* ====================================================== End of RESPONSIVE ============================================================ */

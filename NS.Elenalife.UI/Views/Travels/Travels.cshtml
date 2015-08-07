@@ -1,0 +1,72 @@
+﻿<link href="~/Content/travels.css" rel="stylesheet" />
+
+<!-- ================================================= Top-Bar ============================================================ -->
+<nav id="top-bar-menu" class="top-bar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header navbar-mob-size el-navbar">
+            <button type="button" class="navbar-toggle collapsed btn-collapsed nav-btn-collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo-sm" href="@Url.Action("Index", "Home")"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right btn-top-bar">
+                <li><a href="@Url.Action("Index", "travels")">Путешествия</a></li>
+                <li><a href="@Url.Action("Index", "notes")">Заметки</a></li>
+                <li><a href="@Url.Action("Index", "maps")">Карта</a></li>
+                <li><a href="@Url.Action("Index", "about")">Обо мне</a></li>
+                <li><a href="@Url.Action("Index", "instagram")">Инстаграм</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- ================================================= End of Top-Bar ============================================================ -->
+
+<div id="bg-test-2" class="travels-el-bg" style="background: url(/img/gum.JPG) no-repeat;">
+    <!-- ================================================= Travels Section ============================================================ -->
+    <div class="container">
+        <div class="wow fadeInUp delay-07s">
+            <a href="@Url.Action("inner", "travels", new { id = 1 })" class="link-place">
+                <div class="content-section-1">
+                    <h1>Москва</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ================================================= End of Travels Section ============================================================ -->
+</div>
+
+<div class="travels-el-bg" style="background: url(/img/Poster_kazan.jpg) no-repeat;">
+    <!-- ================================================= Travels Section ============================================================ -->
+    <div class="container">
+        <div class="wow fadeInUp delay-07s">
+            <a href="internal-travels.html" class="link-place">
+                <div class="content-section-1">
+                    <h1>Казань</h1>
+                </div>
+            </a>
+        </div>
+        <div class="helper-el wow fadeInUp delay-1s">
+            <span class="scroll-helper"></span>
+        </div>
+    </div>
+    <!-- ================================================= End of Travels Section ============================================================ -->
+</div>
+<div id="bg-test-3" class="travels-el-bg">
+    <!-- ================================================= Travels Section ============================================================ -->
+    <div class="container">
+        <div class="wow fadeInUp delay-07s">
+            <a href="#" class="link-place">
+                <div class="content-section-1">
+                    <h1>Греция</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ================================================= End of Travels Section ============================================================ -->
+</div>

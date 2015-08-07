@@ -1,0 +1,103 @@
+/* ====================================================== Mt map section ============================================================ */
+.mm-el-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover !important;
+    background-position: center center;
+    /*z-index: 1;*/
+}
+
+#mm-page {
+    background: url(../img/bg-my-map.jpg) 50% 0 no-repeat fixed;
+}
+
+.map {
+    width: 100%;
+    height: 570px;
+    margin-bottom: 50px;
+}
+
+.name-continent {
+    background-color: #5AB7B7;
+    padding: 13px 25px;
+}
+
+.my-map-section {
+    padding-top: 150px;
+}
+
+.my-map-section h1 {
+    font-family: "Raleway Medium", sans-serif;
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.block-map {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/* ====================================================== End of my map section ============================================================ */
+
+/* ====================================================== RESPONSIVE ============================================================ */
+/* MAX-WIDTH INQUIRIES */
+@media only screen and (max-width: 991px) {
+    .my-map-section {
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .my-map-section h1 {
+        font-size: 18px !important;
+    }
+    .name-continent {
+        padding: 12px 18px;
+    }
+
+    .my-map-section {
+        padding-top: 80px;
+    }
+
+    .map {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .tit-section {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    .map {
+        height: 280px !important;
+    }
+
+    #top-bar-menu a.navbar-brand {
+        margin: 14px 15px 14px -5px;
+    }
+}
+/* End of MAX-WIDTH INQUIRIES */
+
+/* MIN-WIDTH INQUIRIES */
+@media only screen and (min-width: 1200px) {
+    .block-map {
+        width: 1040px;
+    }
+}
+/* End of MIN-WIDTH INQUIRIES */
+
+/* MAX-HEIGHT INQUIRIES */
+@media only screen and (max-height: 790px) {
+    .map {
+        height: 400px;
+    }
+}
+/* End of MAX-HEIGHT INQUIRIES */
+
+/* MIN-HEIGHT INQUIRIES */
+/* End of MIN-HEIGHT INQUIRIES */
+/* ====================================================== End of RESPONSIVE ============================================================ */

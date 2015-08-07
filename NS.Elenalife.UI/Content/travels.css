@@ -1,0 +1,127 @@
+/* ====================================================== Travels section ============================================================ */
+.travels-el-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover !important;
+    background-position: center center;
+    z-index: 1;
+    padding: 250px 0 40px 0;
+    /*padding-bottom: 40px;*/
+}
+
+#bg-test-1 {
+    background: url(../img/bg-insta-page.jpg) 50% 0 no-repeat;
+}
+
+#bg-test-2 {
+    background: url(../img/bg-test-2.jpg) 50% 0 no-repeat;
+}
+
+#bg-test-3 {
+    background: url(../img/bg-test-3.jpg) 50% 0 no-repeat;
+}
+
+.scroll-helper {
+    width: 37px;
+    height: 37px;
+    display: block;
+    border-radius: 50%;
+    padding: 32px;
+    margin: 8% auto 0;
+    background-size: 37px !important;
+    background: #fff url('../img/scroll-helper.png') no-repeat center center;
+    box-shadow: 0 4px 12px 0 rgba(50, 50, 50, 0.19);
+}
+
+.link-place {
+    color: #fff !important;
+}
+
+.link-place>.content-section-1:hover {
+    background-color: rgba(89,183,183, 0.65);
+}
+/*========== LINK-EFFECT ==========*/
+/*.link {*/
+    /*outline: none;*/
+    /*text-decoration: none;*/
+    /*position: relative;*/
+    /*font-size: 8em;*/
+    /*line-height: 1;*/
+    /*color: #9e9ba4;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.link--kukuri {*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 900;*/
+    /*overflow: hidden;*/
+    /*line-height: 0.75;*/
+    /*color: #c5c2b8;*/
+/*}*/
+
+/*.link--kukuri:hover {*/
+    /*color: #c5c2b8;*/
+/*}*/
+
+/*.link--kukuri::after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*height: 16px;*/
+    /*width: 100%;*/
+    /*top: 50%;*/
+    /*margin-top: -8px;*/
+    /*right: 0;*/
+    /*background: #F9F9F9;*/
+    /*-webkit-transform: translate3d(-100%,0,0);*/
+    /*transform: translate3d(-100%,0,0);*/
+    /*-webkit-transition: -webkit-transform 0.4s;*/
+    /*transition: transform 0.4s;*/
+    /*-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
+    /*transition-timing-function: cubic-bezier(0.7,0,0.3,1);*/
+/*}*/
+
+/*.link--kukuri:hover::after {*/
+    /*-webkit-transform: translate3d(100%,0,0);*/
+    /*transform: translate3d(100%,0,0);*/
+/*}*/
+
+/*.link--kukuri::before {*/
+    /*content: attr(data-letters);*/
+    /*position: absolute;*/
+    /*z-index: 2;*/
+    /*overflow: hidden;*/
+    /*color: #424242;*/
+    /*white-space: nowrap;*/
+    /*width: 0%;*/
+    /*-webkit-transition: width 0.4s 0.3s;*/
+    /*transition: width 0.4s 0.3s;*/
+/*}*/
+
+/*.link--kukuri:hover::before {*/
+    /*width: 100%;*/
+/*}*/
+/*=== End of LINK-EFFECT ===*/
+/* ====================================================== End of Travels section ============================================================ */
+
+/* ====================================================== RESPONSIVE ============================================================ */
+/* MAX-WIDTH INQUIRIES */
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 991px) {
+}
+/* End of MAX-WIDTH INQUIRIES */
+
+/* MIN-WIDTH INQUIRIES */
+@media only screen and (min-width: 1200px) {
+}
+/* End of MIN-WIDTH INQUIRIES */
+
+/* MAX-HEIGHT INQUIRIES */
+@media only screen and (max-height: 790px) {
+}
+/* End of MAX-HEIGHT INQUIRIES */
+
+/* MIN-HEIGHT INQUIRIES */
+/* End of MIN-HEIGHT INQUIRIES */
+/* ====================================================== End of RESPONSIVE ============================================================ */
