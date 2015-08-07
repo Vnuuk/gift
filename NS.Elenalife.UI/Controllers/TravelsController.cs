@@ -11,7 +11,11 @@ namespace NS.Elenalife.UI.Controllers
 
         public ActionResult Inner(int id)
         {
-            return View("Details");
+            //if moscow
+            if(id == 1)
+                return View("Details");
+
+            return View("DetailsKazan");
         }
     }
 }

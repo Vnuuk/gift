@@ -344,6 +344,15 @@
     <Content Include="img\insta-7.JPG" />
     <Content Include="img\insta-8.jpg" />
     <Content Include="img\it-bg-2.jpg" />
+    <Content Include="img\k1.JPG" />
+    <Content Include="img\k2.jpg" />
+    <Content Include="img\k3.JPG" />
+    <Content Include="img\k4.JPG" />
+    <Content Include="img\k5.jpg" />
+    <Content Include="img\k6.JPG" />
+    <Content Include="img\k7.JPG" />
+    <Content Include="img\k8.jpg" />
+    <Content Include="img\k9.jpg" />
     <Content Include="img\kul_sharif-1600x1200.jpg" />
     <Content Include="img\mamma_pizza.JPG" />
     <Content Include="img\maneshka-640x320.jpg" />
@@ -397,6 +406,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Travels\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Travels\DetailsKazan.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
