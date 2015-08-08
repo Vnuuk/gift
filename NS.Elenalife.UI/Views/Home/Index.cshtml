@@ -26,7 +26,7 @@
     </nav>
     <!-- ================================================= End of Top-Bar ============================================================ -->
     <!-- ================================================= Content-section-1 ============================================================ -->
-    <div class="section-1">
+    <div id="wallpaper" class="section-1">
         <nav id="next-btn">
             <a href="#" class="icon-next"></a>
         </nav>
@@ -36,12 +36,10 @@
         <div class="container">
             <div class="wow fadeInUp delay-07s">
                 <div class="content-section-1">
-                    <h4>Август 2014</h4>
+                    <h4 id="title1">Август 2014</h4>
                     <hr />
-                    <h1>Казань</h1>
-                    <p>
-                        Прогулка по Казанскому кремлю. На заднем плане - здание министерства сельского хозяйства республики Татарстан.
-                    </p>
+                    <h1 id="title2">Казань</h1>
+                    <p id="title3">Прогулка по Казанскому кремлю. На заднем плане - здание министерства сельского хозяйства республики Татарстан.</p>
                 </div>
             </div>
             <div class="helper-el wow fadeInUp delay-1s">
@@ -363,3 +361,73 @@
     </div>
 </div>
 <!-- ================================================= End of Footer ============================================================ -->
+
+
+<script>
+    $(document).ready(function () {
+        $('#previous-btn').click();
+        $('#next-btn').click();
+
+
+        var i = 0;
+        var images = [{ src: '/img/bg-s1-intro.jpg', title1: "Август 2014", title2: "Казань", title3: "Прогулка по Казанскому кремлю. На заднем плане - здание министерства сельского хозяйства республики Татарстан." },
+            {src: '/img/paska.JPG', title1: "Август 2015", title2: "Новая набережная", title3: "Первое знакомство Паскаля с морем! =)"}];
+    var max = images.length - 1;
+
+    $(document).on('click', '#next-btn', function () {
+        if (i == max) {
+            i = 0;
+            $('#intro').fadeOut(500);
+            setTimeout(function() {
+                $('#intro').css('background-image', 'url("' + images[0].src + '")').fadeIn(500);
+                $('#title1').html(images[0].title1);
+                $('#title2').html(images[0].title2);
+                $('#title3').html(images[0].title3);
+            }, 500);
+
+            console.log(i);
+            return;
+        }
+
+        i++;
+        $('#intro').fadeOut(500);
+        setTimeout(function () {
+            $('#intro').css('background-image', 'url("' + images[i].src + '")').fadeIn(500);
+            $('#title1').html(images[i].title1);
+            $('#title2').html(images[i].title2);
+            $('#title3').html(images[i].title3);
+
+        }, 500);
+
+        console.log(i);
+    });
+
+    $(document).on('click', '#previous-btn', function () {
+        if (i == 0) {
+            i = max;
+            $('#intro').fadeOut(500);
+            setTimeout(function () {
+                $('#intro').css('background-image', 'url("' + images[max].src + '")').fadeIn(500);
+                $('#title1').html(images[max].title1);
+                $('#title2').html(images[max].title2);
+                $('#title3').html(images[max].title3);
+            }, 500);
+
+            console.log(i);
+            return;
+        }
+
+        i--;
+        $('#intro').fadeOut(500);
+        setTimeout(function () {
+            $('#intro').css('background-image', 'url("' + images[i].src + '")').fadeIn(500);
+            $('#title1').html(images[i].title1);
+            $('#title2').html(images[i].title2);
+            $('#title3').html(images[i].title3);
+        }, 500);
+
+        console.log(i);
+    });
+
+    });
+</script>
