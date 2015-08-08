@@ -1,8 +1,8 @@
-google.maps.event.addDomListener(window, 'load', init);
+﻿google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
     var mapOptionsRussia = {
-        zoom: 3,
+        zoom: 4,
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: false,
@@ -150,13 +150,35 @@ function init() {
     var russiaMap = document.getElementById('russia-map');
     var europeMap = document.getElementById('europe-map');
 
-    var map = new google.maps.Map(russiaMap, mapOptionsRussia);
+    var mapRussia = new google.maps.Map(russiaMap, mapOptionsRussia);
     var map = new google.maps.Map(europeMap, mapOptionsEurope);
 
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.805731, 49.171908),
-        map: map,
-        title: 'Snazzy!'
+    new google.maps.Marker({
+        position: new google.maps.LatLng(55.751244, 37.618423),
+        map: mapRussia,
+        title: 'Москва'
     });
+
+
+    new google.maps.Marker({
+        position: new google.maps.LatLng(59.934116, 49.073303),
+        map: mapRussia,
+        title: 'Казань'
+    });
+
+
+    new google.maps.Marker({
+        position: new google.maps.LatLng(36.543803, 32.012652),
+        map: map,
+        title: 'Турция'
+    });
+
+    new google.maps.Marker({
+        position: new google.maps.LatLng(51.1719674, 10.4541194),
+        map: map,
+        title: 'Германия'
+    });
+
+
 
 }

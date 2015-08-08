@@ -1,8 +1,8 @@
-﻿namespace NS.Elenalife.UI.Models
+﻿namespace NS.Elenalife.UI.Vms
 {
     public class PhotoVm
     {
-        public string Url { get; set; }
         public string Title { get; set; }
+        public string Url { get; set; }
     }
 }

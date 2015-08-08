@@ -1,4 +1,5 @@
-﻿<link href="~/Content/instagram.css" rel="stylesheet" />
+﻿@model List<NS.Elenalife.UI.Vms.PhotoVm>
+<link href="~/Content/instagram.css" rel="stylesheet" />
 
 <div id="insta-page" class="insta-el-bg">
     <!-- ================================================= Top-Bar ============================================================ -->
@@ -31,111 +32,26 @@
     <div class="insta-section">
         <div class="container">
             <div class="wow fadeInUp delay-4">
-                <h1 class="tit-section">Lorem ipsum dolor sit amet</h1>
+                <h1 class="tit-section">Мой инстаграм</h1>
             </div>
             <div class="wow fadeInUp delay-07s">
                 <span class="title-line-1"></span>
                 <span class="title-line-2"></span>
             </div>
             <!-- row-1 -->
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-1.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
+            @foreach (var insta in Model)
+            {
+                <div class="col-md-3">
+                    <div class="insta-post">
+                        <img src="@insta.Url" />
+                        <div class="insta-comment">
+                            <p>
+                                 @(insta.Title.Length < 77 ? insta.Title.Replace("#", " #") : insta.Title.Substring(0, 74).Replace("#", " #") + "...")
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-2.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-3.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-4.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- End of row-1 -->
-            <!-- row-2 -->
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-5.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-6.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-7.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="insta-post">
-                    <img src="~/img/insta-8.jpg" />
-                    <div class="insta-comment">
-                        <p>
-                            Lorem Ipsum dolor sit amet,
-                            consectetuer adipiscingelit.
-                            Duis tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            }
             <!-- End of row-2 -->
         </div>
     </div>
