@@ -1,0 +1,14 @@
+﻿<link href="~/Content/admin.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/js/jquery.1.11.1.js"></script>
+<script src="~/js/bootstrap.js"></script>
+
+<div class="enter-admin">
+    <div class="container">
+        <h1>Вход</h1>
+        <form action="@Url.Action("Login")" method="POST">
+            <input class="form-admin" type="password" name="password" placeholder="Password" />
+            <button type="submit" class="el-btn-admin">Enter</button>
+        </form>
+    </div>
+</div>

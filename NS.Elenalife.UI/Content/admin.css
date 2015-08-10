@@ -1,0 +1,196 @@
+/* ====================================================== GLOBALS ============================================================ */
+/* ================== Fonts Site ================== */
+/* === Fonts Raleway === */
+@font-face {
+    font-family: "Raleway Black";
+    src: local("Raleway Black"), url(../fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Black Italic";
+    src: local("Raleway Black Italic"), url(../fonts/Raleway-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: local("Raleway Bold"), url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Bold Italic";
+    src: local("Raleway Bold Italic"), url(../fonts/Raleway-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Medium";
+    src: local("Raleway Medium"), url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Medium Italic";
+    src: local("Raleway Medium Italic"), url(../fonts/Raleway-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Regular";
+    src: local("Raleway Regular"), url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Light";
+    src: local("Raleway Light"), url(../fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: "Raleway Light Italic";
+    src: local("Raleway Light Italic"), url(../fonts/Raleway-LightItalic.ttf);
+}
+/* === End of Fonts Raleway === */
+/* ================== End of Fonts Site ================== */
+
+/* ================== Forms ================== */
+.el-admin-form {
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    padding: 8px 17px;
+    font-family: "Raleway Medium", sans-serif;
+    font-size: 14px;
+    background-color: #F4F4F4;
+    color: #5D5D5D;
+    margin-bottom: 10px;
+    border: 1px solid #DEDEDE;
+    border-bottom: 2px solid #59b7b7;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: "Raleway Medium", sans-serif;
+}
+/* ================== End of Forms ================== */
+/* ====================================================== End of GLOBALS ============================================================ */
+
+/* ====================================================== Admin Section-1 (intro section) ============================================================ */
+.admin-intro-section .el-panel-body-form {
+    width: 500px;
+    margin: 100px auto 100px auto;
+    padding: 50px 60px;
+    border: 2px solid #59B7B7;
+    border-radius: 3px;
+}
+
+.admin-intro-section .el-admin-form {
+    width: 100%;
+    max-width: 100%;
+    max-height: 460px;
+    margin: 6px 0;
+}
+
+.inp_file {
+    margin-bottom: 10px;
+    font-family: "Raleway Medium";
+}
+/* ====================================================== End of Admin Section-1 (intro section) ============================================================ */
+
+.el-accordion-group {
+    width: 350px;
+    margin: 15px auto 15px auto;
+}
+
+.icon-add {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: 30px !important;
+    background: url('../img/icon-plus.png') no-repeat center center;
+}
+
+.el-accordion-group .icon-add {
+    margin: -7px -8px 0 0;
+    float: right;
+    opacity: 0.68;
+    transition: all 0.12s ease-in-out;
+    -webkit-transition: all 0.12s ease-in-out;
+}
+
+.el-accordion-group .icon-add:hover {
+    opacity: 1;
+}
+
+.panel-default > .panel-heading {
+    font-family: "Raleway Medium", sans-serif;
+}
+
+.el-btn-admin {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #59B7B7;
+    padding: 4px 16px;
+    display: block;
+    margin: 12px auto 0 auto;
+}
+
+.enter-admin h1 {
+    font-family: "Raleway Light", sans-serif;
+    letter-spacing: 0;
+    margin: 28px 0 9px 0;
+}
+
+.enter-admin .container {
+    width: 300px;
+}
+
+.enter-admin .form-admin {
+    outline: none;
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    border-bottom: 2px solid #59B7B7;
+    padding: 7px 15px;
+    font-family: "Raleway Medium", sans-serif;
+    border-radius: 3px;
+}
+
+.enter-admin .el-btn-admin {
+    font-family: "Raleway Medium", sans-serif;
+    margin: 12px 0 0 0;
+    padding: 4px 20px;
+}
+
+/* ====================================================== Responsive ============================================================ */
+@media only screen and (max-width: 555px) {
+    .admin-intro-section .el-panel-body-form {
+        width: 100%;
+        margin: 30px auto 30px auto;
+        padding: 30px 38px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .el-accordion-group {
+        width: 250px;
+    }
+
+    .inp_file {
+        width: 216px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 295px) {
+    .el-accordion-group {
+        width: 200px;
+    }
+
+    .inp_file {
+        width: 167px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .enter-admin .container {
+        width: 240px;
+    }
+}
+/* ====================================================== End of Responsive ============================================================ */

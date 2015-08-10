@@ -170,3 +170,16 @@ C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\zh-Hant\System.Spatial.resources
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.dll
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.pdb
 C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\obj\Debug\NS.Elenalife.UI.csprojResolveAssemblyReference.cache
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\FluentNHibernate.dll
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\NHibernate.dll
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\StructureMap.dll
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\FluentValidation.Mvc.dll
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\Iesi.Collections.dll
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\FluentNHibernate.pdb
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\FluentNHibernate.xml
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\NHibernate.xml
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\StructureMap.pdb
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\StructureMap.xml
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\FluentValidation.Mvc.pdb
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\FluentValidation.Mvc.xml
+C:\Users\Anton\Desktop\gift\NS.Elenalife.UI\bin\Iesi.Collections.xml
