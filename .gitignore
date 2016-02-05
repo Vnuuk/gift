@@ -1,0 +1,18 @@
+syntax: glob
+.vs/config/applicationhost.config
+BravectoCOMAU/obj/
+BravectoCOMAU/bin/
+
+
+packages/
+CoopersAnimalHealth.Domain/obj/
+CoopersAnimalHealth.Domain/bin/
+obj/
+*.user
+*.orig
+*vs
+*obj
+*txt
+*cache
+*.txt
+*.cache
