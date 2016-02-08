@@ -16,3 +16,4 @@ obj/
 *cache
 *.txt
 *.cache
+bin/
