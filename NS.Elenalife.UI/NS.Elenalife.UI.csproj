@@ -188,6 +188,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ElContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vms\PhotoVm.cs" />
   </ItemGroup>
@@ -364,6 +367,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Eladmin\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Eladmin\EditPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Eladmin\AddPost.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

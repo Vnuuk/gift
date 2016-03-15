@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
+@model List<NS.Elenalife.UI.Post>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,14 +67,16 @@
                         <a class="collapsed" data-toggle="collapse" href="#collapse3">
                             Notes
                         </a>
+
                     </h4>
                 </div>
                 <div id="collapse3" class="panel-collapse collapse" style="height: 0;">
                     <div class="panel-body">
-                        <a href="#">1. amet</a><br>
-                        <a href="#">2. lorem</a><br>
-                        <a href="#">3. ipsum</a><br>
-                        <a href="#">4. dolor</a>
+                        <a style="font-weight:bold" href="@Url.Action("AddPost", "Eladmin")">Добавить запись</a> <br />
+                        @foreach (var post in Model)
+                        {
+                            <a href="@Url.Action("EditPost", "Eladmin", new { id = post.Id })">@post.Title</a><br>
+                        }
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 
 namespace NS.Elenalife.UI.Controllers
 {
@@ -6,7 +7,9 @@ namespace NS.Elenalife.UI.Controllers
     {
         public ActionResult Index()
         {
-            return View("Notes");
+            var db = new ElContext();
+            var items = db.Posts.ToList();
+            return View("Notes", items);
         }
  
     }

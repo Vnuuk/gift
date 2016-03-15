@@ -30,6 +30,5 @@ namespace NS.Elenalife.UI.Controllers
 
             return View("Instagram", result);
         }
- 
     }
 }
