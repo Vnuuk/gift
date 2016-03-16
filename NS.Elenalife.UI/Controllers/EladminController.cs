@@ -72,8 +72,8 @@ namespace NS.Elenalife.UI.Controllers
             post.Active = true;
 
             var guid = Guid.NewGuid();
-            item.Image.SaveAs(Server.MapPath(" ") + @"\img\posts\" + guid + ".jpg");
-            post.Images.Add(new Image { Path = Server.MapPath(" ") + @"\img\posts\" + guid + ".jpg", PostId = post.Id });
+            item.Image.SaveAs(Server.MapPath(" ").Replace("Eladmin", "") + @"\img\posts\" + guid + ".jpg");
+            post.Images.Add(new Image { Path = @"\img\posts\" + guid + ".jpg", PostId = post.Id });
 
             context.Posts.Add(post);
             context.SaveChanges();
