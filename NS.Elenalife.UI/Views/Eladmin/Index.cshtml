@@ -64,7 +64,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" id="heading3">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" href="#collapse3">
+                        <a class="collapsed" data-toggle="collapse" id="posts" href="#collapse3">
                             Notes
                         </a>
 
@@ -75,7 +75,14 @@
                         <a style="font-weight:bold" href="@Url.Action("AddPost", "Eladmin")">Добавить запись</a> <br />
                         @foreach (var post in Model)
                         {
-                            <a href="@Url.Action("EditPost", "Eladmin", new { id = post.Id })">@post.Title</a><br>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a href="@Url.Action("EditPost", "Eladmin", new { id = post.Id })">@post.Title</a> 
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="@Url.Action("MarkInactive", "Eladmin", new { id = post.Id })">Удалить</a>
+                                </div>
+                            </div>                            
                         }
                     </div>
                 </div>
@@ -119,6 +126,12 @@
 
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#posts').click();
+        });
+    </script>
 
 </body>
 </html>

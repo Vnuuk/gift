@@ -8,7 +8,7 @@ namespace NS.Elenalife.UI.Controllers
         public ActionResult Index()
         {
             var db = new ElContext();
-            var items = db.Posts.ToList();
+            var items = db.Posts.Where(r => r.Active).ToList();
             return View("Notes", items);
         }
  

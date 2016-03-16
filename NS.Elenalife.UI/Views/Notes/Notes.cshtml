@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right btn-top-bar">
                     <li><a href="@Url.Action("Index", "travels")">Путешествия</a></li>
-                    <li><a href="@Url.Action("Index", "notes")">Заметки</a></li>
+                    <li><a href="@Url.Action("Index", "notes")">Блог</a></li>
                     <li><a href="@Url.Action("Index", "maps")">Карта</a></li>
                     <li><a href="@Url.Action("Index", "about")">Обо мне</a></li>
                     <li><a href="@Url.Action("Index", "instagram")">Инстаграм</a></li>
@@ -46,7 +46,11 @@
                         @post.Title
                     </span>
                     <span class="date-note">@post.DateTime.ToShortDateString()</span>
-                    <p>
+                    @if (post.Images.Any())
+                    {
+                        <img style="width:100%" src="@post.Images.First().Path" />
+                    }
+                    <p style="margin-top:10px;">
                         @post.Text
                     </p>
                 </div>

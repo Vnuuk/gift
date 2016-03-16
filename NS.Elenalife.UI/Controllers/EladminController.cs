@@ -10,7 +10,7 @@ namespace NS.Elenalife.UI.Controllers
     {
         public ActionResult Index()
         {
-            var posts = new ElContext().Posts.ToList();
+            var posts = new ElContext().Posts.Where(r => r.Active).ToList();
 
             return View("Index", posts);
         }
@@ -61,14 +61,31 @@ namespace NS.Elenalife.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddPost(Post item)
+        public ActionResult AddPost(PostInput item)
         {
             var context = new ElContext();
             var post = new Post();
             post.Title = item.Title;
             post.Text = item.Text;
             post.DateTime = DateTime.Now;
+            post.Active = true;
+
+            var guid = Guid.NewGuid();
+            item.Image.SaveAs(Server.MapPath(@"~\img\posts\" + guid + ".jpg"));
+            post.Images.Add(new Image { Path = @"\img\posts\" + guid + ".jpg", PostId = post.Id });
+
             context.Posts.Add(post);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult MarkInactive(int id)
+        {
+            var context = new ElContext();
+            var post = context.Posts.First(r => r.Id == id);
+            post.Active = false;
             context.SaveChanges();
 
             return RedirectToAction("Index");
