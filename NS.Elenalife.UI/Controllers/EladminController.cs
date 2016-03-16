@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -71,8 +72,8 @@ namespace NS.Elenalife.UI.Controllers
             post.Active = true;
 
             var guid = Guid.NewGuid();
-            item.Image.SaveAs(Server.MapPath(@"~\img\posts\") + guid + ".jpg");
-            post.Images.Add(new Image { Path = Server.MapPath(@"~\img\posts\") + guid + ".jpg", PostId = post.Id });
+            item.Image.SaveAs(Path.Combine(Server.MapPath(" "), @"\img\posts\" + guid + ".jpg"));
+            post.Images.Add(new Image { Path = Path.Combine(Server.MapPath(" "), @"\img\posts\" + guid + ".jpg"), PostId = post.Id });
 
             context.Posts.Add(post);
             context.SaveChanges();
