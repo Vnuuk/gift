@@ -4,7 +4,6 @@
 <link href="~/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
 <div id="notes-page" class="notes-el-bg">
-    <!-- ================================================= Top-Bar ============================================================ -->
     <nav id="top-bar-menu" class="top-bar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header navbar-mob-size el-navbar">
@@ -29,8 +28,6 @@
             </div>
         </div>
     </nav>
-    <!-- ================================================= End of Top-Bar ============================================================ -->
-    <!-- ================================================= notes section ============================================================ -->
     <div class="notes-section">
         <div class="container">
             <div class="wow fadeInUp delay-4">
@@ -42,21 +39,32 @@
             </div>
             @foreach (var post in Model)
             {
-                <div class="note-block">
+                <div id="@post.Id" class="note-block">
                     <span class="title-note">
                         @post.Title
                     </span>
-                    <img src="@Url.Content("../../img/edit-icon.png")" style="width: 20px; height: 20px; padding-bottom: 3px;"/>
+                    <img src="@Url.Content("../../img/edit-icon.png")" style="width: 20px; height: 25px; padding-bottom: 9px;"/>
+                    <img src="@Url.Content("../../img/close-icon.png")" data-id="@post.Id" class="disable-note" style="width: 23px; height: 28px; padding-bottom: 9px;"/>
                     <span class="date-note">@post.DateTime.ToShortDateString()</span>
                     @if (post.Images.Any())
                     {
-                        <img style="width:100%" src="@post.Images.First().Path" />
+                        <img style="width: 100%" src="@post.Images.First().Path"/>
                     }
 
-                    <p style="margin-top:10px;">@post.Text</p>
+                    <p style="margin-top: 10px;">@post.Text</p>
                 </div>
             }
         </div>
     </div>
-    <!-- ================================================= End of notes ============================================================ -->
 </div>
+
+<script>
+    $(document).ready(function() {
+        $(document).on('click', '.disable-note', function () {
+            var id = $(this).data('id');
+            $.get('@Url.Action("MarkInactive", "Eladmin")' + '?id=' + id, function() {
+                $('#' + id).remove();
+            });
+        });
+    });
+</script>

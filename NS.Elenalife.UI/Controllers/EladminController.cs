@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace NS.Elenalife.UI.Controllers
 {
-    [Auth]
+    //[Auth]
     public class EladminController : Controller
     {
         public ActionResult Index()
