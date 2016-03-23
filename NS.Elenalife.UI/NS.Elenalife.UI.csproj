@@ -269,6 +269,7 @@
     <Content Include="img\bg-test-3.jpg" />
     <Content Include="img\charli.jpg" />
     <Content Include="img\checkhov.JPG" />
+    <Content Include="img\close-icon.png" />
     <Content Include="img\divnomorsk.jpg" />
     <Content Include="img\edit-icon.png" />
     <Content Include="img\el-favicon.png" />
