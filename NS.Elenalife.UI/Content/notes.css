@@ -32,6 +32,11 @@
     background-color: #fff;
 }
 
+.div-title-edit {
+    width: 530px;
+    margin: 0 auto;
+}
+
 .note-block p {
     color: #616161;
     margin: 0;
@@ -86,6 +91,10 @@
 
     .note-block {
         width: 270px;
+    }
+
+    .div-title-edit {
+        width: 300px;
     }
 
     .note-block .date-note {

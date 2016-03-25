@@ -1,6 +1,6 @@
 ﻿@model List<NS.Elenalife.UI.Post>
 
-<link href="~/Content/notes.css" rel="stylesheet"/>
+<link href="~/Content/notes.css" rel="stylesheet" />
 <link href="~/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
 <div id="notes-page" class="notes-el-bg">
@@ -39,16 +39,21 @@
             </div>
             @foreach (var post in Model)
             {
+                <div class="input-group div-title-edit container" style="display: none;">
+                    <input type="text" class="title-edit form-control" data-id="@post.Id" style="margin-bottom: 2px;" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" style="margin-top: -2px" type="button">Ok</button>
+                    </span>
+                </div>
                 <div id="@post.Id" class="note-block">
-                    <span class="title-note">
+                    <span class="title-note" data-id="@post.Id">
                         @post.Title
                     </span>
-                    <img src="@Url.Content("../../img/edit-icon.png")" style="width: 20px; height: 25px; padding-bottom: 9px;"/>
-                    <img src="@Url.Content("../../img/close-icon.png")" data-id="@post.Id" class="disable-note" style="width: 23px; height: 28px; padding-bottom: 9px;"/>
+                    <img src="@Url.Content("../../img/close-icon.png")" data-id="@post.Id" class="disable-note" style="width: 23px; height: 28px; padding-bottom: 9px;" />
                     <span class="date-note">@post.DateTime.ToShortDateString()</span>
                     @if (post.Images.Any())
                     {
-                        <img style="width: 100%" src="@post.Images.First().Path"/>
+                        <img style="width: 100%" src="@post.Images.First().Path" />
                     }
 
                     <p style="margin-top: 10px;">@post.Text</p>
@@ -59,12 +64,25 @@
 </div>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $(document).on('click', '.disable-note', function () {
             var id = $(this).data('id');
-            $.get('@Url.Action("MarkInactive", "Eladmin")' + '?id=' + id, function() {
+            $.get('@Url.Action("MarkInactive", "Eladmin")' + '?id=' + id, function () {
                 $('#' + id).remove();
             });
+        });
+
+        $(document).on('click', '.title-note', function () {
+            var id = $(this).data('id');
+            var textbox = $('input[data-id="' + id + '"]').closest('.div-title-edit');
+            var display = $(textbox).css('display');
+            if (display == 'none') {
+                var value = $(this).html().trim();
+                $('input[data-id="' + id + '"]').closest('.title-edit').val(value);
+                textbox.show();
+            } else {
+                textbox.hide();
+            }
         });
     });
 </script>
