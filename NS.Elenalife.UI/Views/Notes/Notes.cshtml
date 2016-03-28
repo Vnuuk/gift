@@ -39,14 +39,14 @@
             </div>
             @foreach (var post in Model)
             {
-                <div class="input-group div-title-edit container" style="display: none;">
-                    <input type="text" class="title-edit form-control" data-id="@post.Id" style="margin-bottom: 2px;" />
+                <div class="input-group div-title-edit container" id="editable@(post.Id)" style="display: none;">
+                    <input type="text" class="title-edit form-control" id="title@(post.Id)" data-id="@post.Id" style="margin-bottom: 2px;" />
                     <span class="input-group-btn">
-                        <button class="btn btn-default" style="margin-top: -2px" type="button">Ok</button>
+                        <button class="btn btn-default save-title" data-id="@post.Id" style="margin-top: -2px" type="button">Ok</button>
                     </span>
                 </div>
                 <div id="@post.Id" class="note-block">
-                    <span class="title-note" data-id="@post.Id">
+                    <span class="title-note" id="live@(post.Id)" data-id="@post.Id">
                         @post.Title
                     </span>
                     <img src="@Url.Content("../../img/close-icon.png")" data-id="@post.Id" class="disable-note" style="width: 23px; height: 28px; padding-bottom: 9px;" />
@@ -83,6 +83,15 @@
             } else {
                 textbox.hide();
             }
+        });
+
+        $(document).on('click', ".save-title", function () {
+            var id = $(this).data('id');
+            var text = $('#title' + id).val();
+            $.post('@Url.Action("ChangeTitle", "Eladmin")', { id: id, title: text }, function() {
+                $('#editable' + id).hide();
+                $('#live' + id).html(text);
+            });
         });
     });
 </script>

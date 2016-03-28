@@ -91,5 +91,16 @@ namespace NS.Elenalife.UI.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public ActionResult ChangeTitle(int id, string title)
+        {
+            var context = new ElContext();
+            var post = context.Posts.First(r => r.Id == id);
+            post.Title = title;
+            context.SaveChanges();
+
+            return Json(true);
+        }
     }
 }
