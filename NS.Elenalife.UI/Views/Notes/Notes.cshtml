@@ -42,11 +42,11 @@
                 <div class="input-group div-title-edit container" id="editable@(post.Id)" style="display: none;">
                     <input type="text" class="title-edit form-control" id="title@(post.Id)" data-id="@post.Id" style="margin-bottom: 2px;" />
                     <span class="input-group-btn">
-                        <button class="btn btn-default save-title" data-id="@post.Id" style="margin-top: -2px" type="button">Ok</button>
+                        <button class="btn btn-default save-title" data-id="@post.Id" style="margin-top: -2px; cursor: pointer;" type="button">Ok</button>
                     </span>
                 </div>
                 <div id="@post.Id" class="note-block">
-                    <span class="title-note" id="live@(post.Id)" data-id="@post.Id">
+                    <span class="title-note" id="live@(post.Id)" style="cursor: pointer;" data-id="@post.Id">
                         @post.Title
                     </span>
                     <img src="@Url.Content("../../img/close-icon.png")" data-id="@post.Id" class="disable-note" style="width: 23px; height: 28px; padding-bottom: 9px;" />
