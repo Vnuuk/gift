@@ -53,7 +53,7 @@
                     <span class="date-note">@post.DateTime.ToShortDateString()</span>
                     @if (post.Images.Any())
                     {
-                        <img style="width: 100%" src="@post.Images.First().Path" />
+                        <img style="width: 100%; cursor: pointer" class="img-to-edit" src="@post.Images.First().Path" />
                     }
 
                     <p style="margin-top: 10px;">@post.Text</p>
@@ -92,6 +92,10 @@
                 $('#editable' + id).hide();
                 $('#live' + id).html(text);
             });
+        });
+
+        $(document).on("dblclick", '.img-to-edit', function() {
+            alert();
         });
     });
 </script>
